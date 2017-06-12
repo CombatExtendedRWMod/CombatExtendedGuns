@@ -76,7 +76,7 @@
     <soundInteract>InteractRifle</soundInteract>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <SightsEfficiency>0.50</SightsEfficiency>
+      <SightsEfficiency>1</SightsEfficiency>
       <ShotSpread>0.06</ShotSpread>
       <SwayFactor>1.52</SwayFactor>
       <Bulk>10.90</Bulk>
@@ -129,7 +129,7 @@
     <soundInteract>InteractRifle</soundInteract>
     <statBases>
       <WorkToMake>13000</WorkToMake>
-      <SightsEfficiency>0.50</SightsEfficiency>
+      <SightsEfficiency>1</SightsEfficiency>
       <ShotSpread>0.06</ShotSpread>
       <SwayFactor>1.41</SwayFactor>
       <Bulk>10.2</Bulk>
@@ -178,7 +178,7 @@
     <soundInteract>InteractRifle</soundInteract>
     <statBases>
       <WorkToMake>22500</WorkToMake>
-      <SightsEfficiency>0.50</SightsEfficiency>
+      <SightsEfficiency>1</SightsEfficiency>
       <ShotSpread>0.09</ShotSpread>
       <SwayFactor>1.23</SwayFactor>
       <Bulk>8.80</Bulk>
@@ -231,7 +231,7 @@
     <soundInteract>InteractRifle</soundInteract>
     <statBases>
       <WorkToMake>18500</WorkToMake>
-      <SightsEfficiency>1.24</SightsEfficiency>
+      <SightsEfficiency>1.74</SightsEfficiency>
       <ShotSpread>0.04</ShotSpread>
       <SwayFactor>1.70</SwayFactor>
       <Bulk>12.25</Bulk>
@@ -283,7 +283,7 @@
     <soundInteract>InteractRifle</soundInteract>
     <statBases>
       <WorkToMake>36000</WorkToMake>
-      <SightsEfficiency>2.5</SightsEfficiency>
+      <SightsEfficiency>3.0</SightsEfficiency>
       <ShotSpread>0.02</ShotSpread>
       <SwayFactor>1.92</SwayFactor>
       <Bulk>15.48</Bulk>
@@ -334,7 +334,7 @@
     <soundInteract>InteractRifle</soundInteract>
     <statBases>
       <WorkToMake>27500</WorkToMake>
-      <SightsEfficiency>0.50</SightsEfficiency>
+      <SightsEfficiency>1</SightsEfficiency>
       <ShotSpread>0.06</ShotSpread>
       <SwayFactor>1.51</SwayFactor>
       <Bulk>14.05</Bulk>
@@ -393,7 +393,7 @@
     <soundInteract>InteractRifle</soundInteract>
     <statBases>
       <WorkToMake>25000</WorkToMake>
-      <SightsEfficiency>0.50</SightsEfficiency>
+      <SightsEfficiency>1</SightsEfficiency>
       <ShotSpread>0.06</ShotSpread>
       <SwayFactor>1.24</SwayFactor>
       <Bulk>13.37</Bulk>
@@ -453,7 +453,7 @@
     <soundInteract>InteractRifle</soundInteract>
     <statBases>
       <WorkToMake>27000</WorkToMake>
-      <SightsEfficiency>0.50</SightsEfficiency>
+      <SightsEfficiency>1</SightsEfficiency>
       <ShotSpread>0.05</ShotSpread>
       <SwayFactor>1.36</SwayFactor>
       <Bulk>14.92</Bulk>
@@ -513,7 +513,7 @@
     <soundInteract>InteractRifle</soundInteract>
     <statBases>
       <WorkToMake>21000</WorkToMake>
-      <SightsEfficiency>1.16</SightsEfficiency>
+      <SightsEfficiency>1.66</SightsEfficiency>
       <ShotSpread>0.2</ShotSpread>
       <SwayFactor>1.68</SwayFactor>
       <Bulk>10.50</Bulk>
