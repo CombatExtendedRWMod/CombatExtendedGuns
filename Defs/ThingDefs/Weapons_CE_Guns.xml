@@ -1051,4 +1051,127 @@
     </recipeMaker>
   </ThingDef>
 
+  <!-- ==================== Charge LMG ==================== -->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>CE_Gun_ChargeLMG</defName>
+    <label>L-20 LMG</label>
+    <description>Charged-shot light machine gun designed for suppression.</description>
+    <graphicData>
+      <texPath>Things/Weapons/ChargeLMG</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractChargeRifle</soundInteract>
+    <statBases>
+      <WorkToMake>57000</WorkToMake>
+      <SightsEfficiency>1.1</SightsEfficiency>
+      <ShotSpread>0.07</ShotSpread>
+      <SwayFactor>1.12</SwayFactor>
+      <Bulk>12.0</Bulk>
+      <Mass>7.0</Mass>
+      <RangedWeapon_Cooldown>0.56</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>65</Steel>
+      <Plasteel>30</Plasteel>
+      <Component>11</Component>
+      <Chemfuel>15</Chemfuel>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>1.16</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <projectileDef>Bullet_8x35mmCharged</projectileDef>
+        <warmupTime>1.0</warmupTime>
+        <range>75</range>
+        <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+        <burstShotCount>10</burstShotCount>
+        <soundCast>ShotChargeRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <recoilPattern>Mounted</recoilPattern>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>100</magazineSize>
+        <reloadTime>7.8</reloadTime>
+        <ammoSet>AmmoSet_8x35mmCharged</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>SuppressFire</aiAimMode>
+        <aimedBurstShotCount>5</aimedBurstShotCount>
+      </li>
+    </comps>
+    <weaponTags>
+      <li>CE_MachineGun</li>
+      <li>AdvancedGun</li>
+    </weaponTags>
+    <recipeMaker>
+      <researchPrerequisite>ChargedShot</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <!-- ==================== Charge Sniper ==================== -->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>CE_Gun_ChargeSniperRifle</defName>
+    <label>R-11 precision rifle</label>
+    <description>Charged-shot sniper rifle equipped with advanced optics for long-range shooting.</description>
+    <graphicData>
+      <texPath>Things/Weapons/ChargeSniper</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractChargeRifle</soundInteract>
+    <statBases>
+      <WorkToMake>50500</WorkToMake>
+      <SightsEfficiency>2.1</SightsEfficiency>
+      <ShotSpread>0.05</ShotSpread>
+      <SwayFactor>1.9</SwayFactor>
+      <Bulk>12.0</Bulk>
+      <Mass>6.0</Mass>
+      <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <Plasteel>30</Plasteel>
+      <Component>10</Component>
+      <Chemfuel>15</Chemfuel>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <projectileDef>Bullet_8x35mmCharged</projectileDef>
+        <warmupTime>2.1</warmupTime>
+        <range>75</range>
+        <soundCast>ShotChargeRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>10</magazineSize>
+        <reloadTime>4</reloadTime>
+        <ammoSet>AmmoSet_8x35mmCharged</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>AimedShot</aiAimMode>
+      </li>
+    </comps>
+    <weaponTags>
+      <li>SniperRifle</li>
+      <li>AdvancedGun</li>
+    </weaponTags>
+    <recipeMaker>
+      <researchPrerequisite>ChargedShot</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
 </ThingDefs>
