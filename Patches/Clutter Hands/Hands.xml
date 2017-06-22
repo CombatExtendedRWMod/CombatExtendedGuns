@@ -29,7 +29,6 @@
           <li>CE_Gun_USASTwelve</li>
           <li>CE_Gun_SVD</li>
           <li>CE_Gun_RPD</li>
-          <li>CE_Gun_PKM</li>
         </value>
       </li>
 
@@ -59,6 +58,7 @@
             <MainHand>(-0.2,0.3,-0.1)</MainHand>
             <SecHand>(0.175,0,-0.1)</SecHand>
             <ThingTargets>
+              <li>CE_Gun_PKM</li>
               <li>CE_Gun_TacFifty</li>
             </ThingTargets>
           </li>
