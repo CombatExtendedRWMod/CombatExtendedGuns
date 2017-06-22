@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="CombatExtended.PatchOperationFindMod">
+        <modName>Clutter Weapon Hands</modName>
+      </li>
+
+      <li Class="PatchOperationInsert">
+        <xpath>*/WHands.ClutterHandsTDef[defName="ClutterHandsSettings"]/WeaponCompLoader/li/ThingTargets/li[.="Gun_Pistol"]</xpath>
+        <value>
+          <li>CE_Gun_PSeven</li>
+          <li>CE_Gun_TaurusJudge</li>
+        </value>
+      </li>
+
+      <li Class="PatchOperationInsert">
+        <xpath>*/WHands.ClutterHandsTDef[defName="ClutterHandsSettings"]/WeaponCompLoader/li/ThingTargets/li[.="Gun_BoltActionRifle"]</xpath>
+        <value>
+          <li>CE_Gun_SKS</li>
+          <li>CE_Gun_PTRS</li>
+        </value>
+      </li>
+
+      <li Class="PatchOperationInsert">
+        <xpath>*/WHands.ClutterHandsTDef[defName="ClutterHandsSettings"]/WeaponCompLoader/li/ThingTargets/li[.="Gun_ChargeRifle"]</xpath>
+        <value>
+          <li>CE_Gun_USASTwelve</li>
+          <li>CE_Gun_SVD</li>
+          <li>CE_Gun_RPD</li>
+        </value>
+      </li>
+
+      <li Class="PatchOperationAdd">
+        <xpath>*/WHands.ClutterHandsTDef[defName="ClutterHandsSettings"]/WeaponCompLoader</xpath>
+        <value>
+          <li>
+            <MainHand>(-0.2,0.3,-0.05)</MainHand>
+            <SecHand>(0.175,0,-0.05)</SecHand>
+            <ThingTargets>
+            	<li>CE_Gun_FNFAL</li>
+            	<li>CE_Gun_AKFortySeven</li>
+            	<li>CE_Gun_AKTwelve</li>
+            	<li>CE_Gun_MSixty</li>
+            	<li>CE_Gun_ChargeLMG</li>
+            	<li>CE_Gun_ChargeSniperRifle</li>
+            </ThingTargets>
+          </li>
+          <li>
+            <MainHand>(-0.075, 0.3, -0.075)</MainHand>
+            <SecHand>(0.275, 0, -0.025)</SecHand>
+            <ThingTargets>
+              <li>CE_Gun_KrissVector</li>
+            </ThingTargets>
+          </li>
+          <li>
+            <MainHand>(-0.2,0.3,-0.1)</MainHand>
+            <SecHand>(0.175,0,-0.1)</SecHand>
+            <ThingTargets>
+              <li>CE_Gun_PKM</li>
+              <li>CE_Gun_TacFifty</li>
+            </ThingTargets>
+          </li>
+          <li>
+            <MainHand>(-0.15, 0.3, -0.15)</MainHand>
+            <SecHand>(0.275, 0, -0.1)</SecHand>
+            <ThingTargets>
+              <li>CE_Gun_MilkorMGL</li>
+            </ThingTargets>
+          </li>
+          <li>
+            <MainHand>(-0.075, 0.3, -0.15)</MainHand>
+            <SecHand>(0.175, 0, -0.15)</SecHand>
+            <ThingTargets>
+              <li>CE_Gun_RPGSeven</li>
+            </ThingTargets>
+          </li>
+          <li>
+            <MainHand>(-0.1, 0.3, -0.05)</MainHand>
+            <SecHand>(0.15, 0, -0.05)</SecHand>
+            <ThingTargets>
+              <li>CE_Gun_M72LAW</li>
+            </ThingTargets>
+          </li>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>
+
