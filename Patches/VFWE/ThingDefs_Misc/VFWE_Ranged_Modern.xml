@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="CombatExtended.PatchOperationFindMod">
+				<modName>Vanilla-Friendly Weapon Expansion</modName>
+			</li>
+			<!-- ========== Fifty Cal Rifle ========== -->
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[defName="Gun_FiftyCalRifle"]/label</xpath>
+				<value>
+					<label>M82A1</label>
+				</value>
+			</li>
+			<!-- ========== Improvised Pistol ========== -->
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[defName="Gun_ImprovisedPistol"]/label</xpath>
+				<value>
+					<label>I-1 pistol Mk.XVII</label>
+				</value>
+			</li>
+			<!-- ========== Repeater Rifle ========== -->
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[defName="Gun_RepeaterRifle"]/label</xpath>
+				<value>
+					<label>Model 1873</label>
+				</value>
+			</li>
+			<!-- ========== Revolver ========== -->
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[defName="Gun_Revolver"]/label</xpath>
+				<value>
+					<label>S&amp;W Model 29</label>
+				</value>
+			</li>
+			<!-- ========== Sawn-Off Shotgun ========== -->
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[defName="Gun_SawnoffShotgun"]/label</xpath>
+				<value>
+					<label>Stevens 311R sawn-off</label>
+				</value>
+			</li>
+			<!-- ========== Vintage Assault Rifle ========== -->
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[defName="Gun_VintageAssaultRifle"]/label</xpath>
+				<value>
+					<label>AK-47</label>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="CombatExtended.PatchOperationFindMod">
+				<modName>XeoNovaDan's Mod Compendium</modName>
+			</li>
+			<!-- ========== Fifty Cal Rifle ========== -->
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[defName="Gun_FiftyCalRifle"]/label</xpath>
+				<value>
+					<label>M82A1</label>
+				</value>
+			</li>
+			<!-- ========== Improvised Pistol ========== -->
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[defName="Gun_ImprovisedPistol"]/label</xpath>
+				<value>
+					<label>I-1 pistol Mk.XVII</label>
+				</value>
+			</li>
+			<!-- ========== Repeater Rifle ========== -->
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[defName="Gun_RepeaterRifle"]/label</xpath>
+				<value>
+					<label>Model 1873</label>
+				</value>
+			</li>
+			<!-- ========== Revolver ========== -->
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[defName="Gun_Revolver"]/label</xpath>
+				<value>
+					<label>S&amp;W Model 29</label>
+				</value>
+			</li>
+			<!-- ========== Sawn-Off Shotgun ========== -->
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[defName="Gun_SawnoffShotgun"]/label</xpath>
+				<value>
+					<label>Stevens 311R sawn-off</label>
+				</value>
+			</li>
+			<!-- ========== Vintage Assault Rifle ========== -->
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[defName="Gun_VintageAssaultRifle"]/label</xpath>
+				<value>
+					<label>AK-47</label>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>
