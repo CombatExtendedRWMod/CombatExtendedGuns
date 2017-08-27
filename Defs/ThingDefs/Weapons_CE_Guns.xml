@@ -107,6 +107,9 @@
       </li>
       <li Class="CombatExtended.CompProperties_FireModes" />
     </comps>
+    <weaponTags>
+      <li>CE_Sidearm</li>
+    </weaponTags>
   </ThingDef>
   
   <!-- ==================== P7 ==================== -->
@@ -156,6 +159,10 @@
     <recipeMaker>
       <researchPrerequisite>CE_AdvancedFirearms</researchPrerequisite>
     </recipeMaker>
+    <weaponTags>
+      <li>CE_Sidearm</li>
+      <li>CE_OneHandedWeapon</li>
+    </weaponTags>
   </ThingDef>
   
   <!-- ==================== USAS-12 ==================== -->
@@ -502,7 +509,7 @@
     <soundInteract>InteractRifle</soundInteract>
     <statBases>
       <WorkToMake>23000</WorkToMake>
-      <SightsEfficiency>1.74</SightsEfficiency>
+      <SightsEfficiency>2.24</SightsEfficiency>
       <ShotSpread>0.04</ShotSpread>
       <SwayFactor>1.70</SwayFactor>
       <Bulk>12.25</Bulk>
@@ -519,7 +526,7 @@
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <projectileDef>Bullet_762x54mmR_FMJ</projectileDef>
-        <warmupTime>1.5</warmupTime>
+        <warmupTime>1.3</warmupTime>
         <range>75</range>
         <soundCast>ShotSniperRifle</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -558,7 +565,7 @@
     <soundInteract>InteractRifle</soundInteract>
     <statBases>
       <WorkToMake>44500</WorkToMake>
-      <SightsEfficiency>3.0</SightsEfficiency>
+      <SightsEfficiency>3.5</SightsEfficiency>
       <ShotSpread>0.02</ShotSpread>
       <SwayFactor>1.92</SwayFactor>
       <Bulk>15.48</Bulk>
@@ -575,7 +582,7 @@
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <projectileDef>Bullet_762x54mmR_FMJ</projectileDef>
-        <warmupTime>5.1</warmupTime>
+        <warmupTime>3.85</warmupTime>
         <range>86</range>
         <soundCast>ShotSniperRifle</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -852,7 +859,7 @@
     <soundInteract>InteractRifle</soundInteract>
     <statBases>
       <WorkToMake>25500</WorkToMake>
-      <SightsEfficiency>1.66</SightsEfficiency>
+      <SightsEfficiency>2.16</SightsEfficiency>
       <ShotSpread>0.2</ShotSpread>
       <SwayFactor>1.68</SwayFactor>
       <Bulk>10.50</Bulk>
@@ -873,7 +880,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <projectileDef>Bullet_RPG7Grenade_HEAT</projectileDef>
         <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
-        <warmupTime>2.17</warmupTime>
+        <warmupTime>2.0</warmupTime>
         <forcedMissRadius>2.8</forcedMissRadius>
         <range>40</range>  <!-- grenades at 12.9, rockets at 40 -->
         <minrange>5</minrange>
@@ -1130,7 +1137,7 @@
     <soundInteract>InteractChargeRifle</soundInteract>
     <statBases>
       <WorkToMake>50500</WorkToMake>
-      <SightsEfficiency>2.1</SightsEfficiency>
+      <SightsEfficiency>2.6</SightsEfficiency>
       <ShotSpread>0.05</ShotSpread>
       <SwayFactor>1.9</SwayFactor>
       <Bulk>12.0</Bulk>
@@ -1148,7 +1155,7 @@
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <projectileDef>Bullet_8x35mmCharged</projectileDef>
-        <warmupTime>2.1</warmupTime>
+        <warmupTime>1.6</warmupTime>
         <range>75</range>
         <soundCast>ShotChargeRifle</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>

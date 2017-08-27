@@ -39,12 +39,12 @@
             <MainHand>(-0.2,0.3,-0.05)</MainHand>
             <SecHand>(0.175,0,-0.05)</SecHand>
             <ThingTargets>
-            	<li>CE_Gun_FNFAL</li>
-            	<li>CE_Gun_AKFortySeven</li>
-            	<li>CE_Gun_AKTwelve</li>
-            	<li>CE_Gun_MSixty</li>
-            	<li>CE_Gun_ChargeLMG</li>
-            	<li>CE_Gun_ChargeSniperRifle</li>
+              <li>CE_Gun_FNFAL</li>
+              <li>CE_Gun_AKFortySeven</li>
+              <li>CE_Gun_AKTwelve</li>
+              <li>CE_Gun_MSixty</li>
+              <li>CE_Gun_ChargeLMG</li>
+              <li>CE_Gun_ChargeSniperRifle</li>
             </ThingTargets>
           </li>
           <li>
