@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
+  <!-- ========== Revolver ========== -->
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>*/ThingDef[defName="Gun_Revolver"]/label</xpath>
+    <value>
+      <label>Ruger Redhawk</label>
+    </value>
+  </Operation>
+
 	<!-- ========== Pistol ========== -->
 
   <Operation Class="PatchOperationReplace">
-    <xpath>*/ThingDef[defName="Gun_Pistol"]/label</xpath>
+    <xpath>*/ThingDef[defName="Gun_Autopistol"]/label</xpath>
     <value>
       <label>M1911</label>
     </value>
