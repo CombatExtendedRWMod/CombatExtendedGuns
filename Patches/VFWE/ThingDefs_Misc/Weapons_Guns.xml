@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="CombatExtended.PatchOperationFindMod">
+				<modName>Vanilla-Friendly Weapon Expansion</modName>
+			</li>
+			<!-- ========== Improvised Pistol ========== -->
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[defName="Gun_ImprovisedPistol"]/label</xpath>
+				<value>
+					<label>I-1 pistol Mk.XVII</label>
+				</value>
+			</li>
+			<!-- ========== Sawed-Off Shotgun ========== -->
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[defName="Gun_SawedOffShotgun"]/label</xpath>
+				<value>
+					<label>Stevens 311R sawed-off</label>
+				</value>
+			</li>
+			<!-- ========== Lever-Action Rifle ========== -->
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[defName="Gun_LeverActionRifle"]/label</xpath>
+				<value>
+					<label>Model 1873</label>
+				</value>
+			</li>
+			<!-- ========== Anti-Materiel Rifle ========== -->
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[defName="Gun_AntiMaterielRifle"]/label</xpath>
+				<value>
+					<label>M82A1</label>
+				</value>
+			</li>
+			<!-- ========== Guided Pulse SMG ========== -->
+			<li Class="PatchOperationReplace">
+				<xpath>*/ThingDef[defName="VFWE_Gun_GuidedPulseSMG"]/label</xpath>
+				<value>
+					<label>GI-20 pulse SMG</label>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>
