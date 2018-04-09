@@ -37,7 +37,7 @@
 			</li>
 			<!-- ========== Guided Pulse SMG ========== -->
 			<li Class="PatchOperationReplace">
-				<xpath>*/ThingDef[defName="VFWE_Gun_GuidedPulseSMG"]/label</xpath>
+				<xpath>*/ThingDef[defName="Gun_GuidedPulseSMG"]/label</xpath>
 				<value>
 					<label>GI-20 pulse SMG</label>
 				</value>
