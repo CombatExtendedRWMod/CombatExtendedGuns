@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-  <ThingDef Name="BaseGun" Abstract="True">
+  <ThingDef Name="BaseGun_CE" Abstract="True">
     <category>Item</category>
     <thingClass>ThingWithComps</thingClass>
     <equipmentType>Primary</equipmentType>
@@ -44,7 +44,7 @@
     </comps>
   </ThingDef>
 
-  <ThingDef Name="BaseMakeableGun" ParentName="BaseGun" Abstract="True">
+  <ThingDef Name="BaseMakeableGun_CE" ParentName="BaseGun_CE" Abstract="True">
     <recipeMaker>
       <workSpeedStat>SmithingSpeed</workSpeedStat>
       <workSkill>Crafting</workSkill>
@@ -58,7 +58,7 @@
     </recipeMaker>
   </ThingDef>
 
-  <ThingDef Name="BaseHumanMakeableGun" ParentName="BaseMakeableGun" Abstract="True">
+  <ThingDef Name="BaseHumanMakeableGun_CE" ParentName="BaseMakeableGun" Abstract="True">
     <weaponTags>
       <li>Gun</li>
     </weaponTags>
@@ -66,7 +66,7 @@
   
   <!-- ==================== Taurus Judge ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun_CE">
     <defName>CE_Gun_TaurusJudge</defName>
     <label>Taurus Judge</label>
     <description>Ancient revolver designed for self-defense. Fires a powerful pistol cartridge as well as small shotgun shells.</description>
@@ -74,7 +74,7 @@
       <texPath>Things/Weapons/TaurusJudge</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>InteractRevolver</soundInteract>
+    <soundInteract>Interact_Revolver</soundInteract>
     <statBases>
       <WorkToMake>4500</WorkToMake>
       <SightsEfficiency>0.7</SightsEfficiency>
@@ -86,7 +86,7 @@
     </statBases>
     <costList>
       <Steel>25</Steel>
-      <Component>2</Component>
+      <ComponentIndustrial>2</ComponentIndustrial>
     </costList>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
@@ -95,7 +95,7 @@
         <defaultProjectile>Bullet_45Colt_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
         <range>12</range>
-        <soundCast>ShotRevolver</soundCast>
+        <soundCast>Shot_Revolver</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
@@ -120,12 +120,11 @@
         </capacities>
         <power>8</power>
         <cooldownTime>1.6</cooldownTime>
-        <commonality>1.5</commonality>
+        <chanceFactor>1.5</chanceFactor>
         <armorPenetration>0.102</armorPenetration>
         <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
       </li>
       <li Class="CombatExtended.ToolCE">
-        <id>barrelblunt</id>
         <label>barrel</label>
         <capacities>
           <li>Blunt</li>
@@ -136,7 +135,6 @@
         <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
       </li>
       <li Class="CombatExtended.ToolCE">
-        <id>barrelpoke</id>
         <label>muzzle</label>
         <capacities>
           <li>Poke</li>
@@ -151,7 +149,7 @@
   
   <!-- ==================== P7 ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun_CE">
     <defName>CE_Gun_PSeven</defName>
     <label>P7</label>
     <description>Ancient pistol design. Used to be popular with police forces due to its compact size.</description>
@@ -159,7 +157,7 @@
       <texPath>Things/Weapons/P7</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>InteractAutopistol</soundInteract>
+    <soundInteract>Interact_Autopistol</soundInteract>
     <statBases>
       <WorkToMake>7000</WorkToMake>
       <SightsEfficiency>0.7</SightsEfficiency>
@@ -171,7 +169,7 @@
     </statBases>
     <costList>
       <Steel>25</Steel>
-      <Component>3</Component>
+      <ComponentIndustrial>3</ComponentIndustrial>
     </costList>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
@@ -180,7 +178,7 @@
         <defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
         <warmupTime>0.6</warmupTime>
         <range>12</range>
-        <soundCast>ShotAutopistol</soundCast>
+        <soundCast>Shot_Autopistol</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
@@ -208,12 +206,11 @@
         </capacities>
         <power>8</power>
         <cooldownTime>1.6</cooldownTime>
-        <commonality>1.5</commonality>
+        <chanceFactor>1.5</chanceFactor>
         <armorPenetration>0.102</armorPenetration>
         <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
       </li>
       <li Class="CombatExtended.ToolCE">
-        <id>barrelblunt</id>
         <label>barrel</label>
         <capacities>
           <li>Blunt</li>
@@ -224,7 +221,6 @@
         <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
       </li>
       <li Class="CombatExtended.ToolCE">
-        <id>barrelpoke</id>
         <label>muzzle</label>
         <capacities>
           <li>Poke</li>
@@ -239,7 +235,7 @@
   
   <!-- ==================== USAS-12 ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun_CE">
     <defName>CE_Gun_USASTwelve</defName>
     <label>USAS-12</label>
     <description>Ancient assault shotgun designed for full-auto fire in close quarters.</description>
@@ -247,7 +243,7 @@
       <texPath>Things/Weapons/USAS12</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>InteractShotgun</soundInteract>
+    <soundInteract>Interact_Shotgun</soundInteract>
     <statBases>
       <WorkToMake>30500</WorkToMake>
       <SightsEfficiency>1</SightsEfficiency>
@@ -259,7 +255,7 @@
     </statBases>
     <costList>
       <Steel>55</Steel>
-      <Component>5</Component>
+      <ComponentIndustrial>5</ComponentIndustrial>
       <Chemfuel>10</Chemfuel>
     </costList>
     <verbs>
@@ -272,7 +268,7 @@
         <ticksBetweenBurstShots>9</ticksBetweenBurstShots>
         <warmupTime>0.6</warmupTime>
         <range>16</range>
-        <soundCast>ShotShotgun</soundCast>
+        <soundCast>Shot_Shotgun</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
@@ -298,12 +294,11 @@
           </capacities>
           <power>9</power>
           <cooldownTime>1.8</cooldownTime>
-          <commonality>1.5</commonality>
+          <chanceFactor>1.5</chanceFactor>
           <armorPenetration>0.11</armorPenetration>
           <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
         </li>
         <li Class="CombatExtended.ToolCE">
-        	<id>barrelblunt</id>
           <label>barrel</label>
           <capacities>
             <li>Blunt</li>
@@ -314,7 +309,6 @@
           <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
         </li>
         <li Class="CombatExtended.ToolCE">
-        	<id>barrelpoke</id>
           <label>muzzle</label>
           <capacities>
             <li>Poke</li>
@@ -329,7 +323,7 @@
   
   <!-- ==================== KRISS Vector ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun_CE">
     <defName>CE_Gun_KrissVector</defName>
     <label>KRISS Vector</label>
     <description>A uniquely shaped, lightweight SMG designed for close-quarters fighting.</description>
@@ -337,7 +331,7 @@
       <texPath>Things/Weapons/KrissVector</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>InteractRifle</soundInteract>
+    <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
       <WorkToMake>30500</WorkToMake>
       <SightsEfficiency>1</SightsEfficiency>
@@ -349,7 +343,7 @@
     </statBases>
     <costList>
       <Steel>30</Steel>
-      <Component>5</Component>
+      <ComponentIndustrial>5</ComponentIndustrial>
       <Chemfuel>10</Chemfuel>
     </costList>
     <verbs>
@@ -362,7 +356,7 @@
         <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
         <warmupTime>0.6</warmupTime>
         <range>14</range>
-        <soundCast>ShotHeavySMG</soundCast>
+        <soundCast>Shot_HeavySMG</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
@@ -388,12 +382,11 @@
           </capacities>
           <power>9</power>
           <cooldownTime>1.8</cooldownTime>
-          <commonality>1.5</commonality>
+          <chanceFactor>1.5</chanceFactor>
           <armorPenetration>0.11</armorPenetration>
           <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
         </li>
         <li Class="CombatExtended.ToolCE">
-        	<id>barrelblunt</id>
           <label>barrel</label>
           <capacities>
             <li>Blunt</li>
@@ -404,7 +397,6 @@
           <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
         </li>
         <li Class="CombatExtended.ToolCE">
-        	<id>barrelpoke</id>
           <label>muzzle</label>
           <capacities>
             <li>Poke</li>
@@ -419,7 +411,7 @@
   
   <!-- ==================== FN FAL ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun_CE">
     <defName>CE_Gun_FNFAL</defName>
     <label>FN FAL</label>
     <description>Ancient military assault rifle firing a full-power rifle cartridge.</description>
@@ -427,7 +419,7 @@
       <texPath>Things/Weapons/FNFAL</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>InteractRifle</soundInteract>
+    <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
       <WorkToMake>28000</WorkToMake>
       <SightsEfficiency>1</SightsEfficiency>
@@ -439,7 +431,7 @@
     </statBases>
     <costList>
       <Steel>55</Steel>
-      <Component>5</Component>
+      <ComponentIndustrial>5</ComponentIndustrial>
       <WoodLog>10</WoodLog>
     </costList>
     <verbs>
@@ -452,7 +444,7 @@
         <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
         <warmupTime>1.1</warmupTime>
         <range>48</range>
-        <soundCast>ShotAssaultRifle</soundCast>
+        <soundCast>Shot_AssaultRifle</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
@@ -480,12 +472,11 @@
           </capacities>
           <power>9</power>
           <cooldownTime>1.8</cooldownTime>
-          <commonality>1.5</commonality>
+          <chanceFactor>1.5</chanceFactor>
           <armorPenetration>0.11</armorPenetration>
           <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
         </li>
         <li Class="CombatExtended.ToolCE">
-        	<id>barrelblunt</id>
           <label>barrel</label>
           <capacities>
             <li>Blunt</li>
@@ -496,7 +487,6 @@
           <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
         </li>
         <li Class="CombatExtended.ToolCE">
-        	<id>barrelpoke</id>
           <label>muzzle</label>
           <capacities>
             <li>Poke</li>
@@ -511,7 +501,7 @@
 
   <!-- ==================== SKS ==================== -->
   
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun_CE">
     <defName>CE_Gun_SKS</defName>
     <label>SKS</label>
     <description>Ancient battle rifle. Fires an intermediate rifle cartridge and is a popular choice for long-range engagements.</description>
@@ -519,7 +509,7 @@
       <texPath>Things/Weapons/SKS</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>InteractRifle</soundInteract>
+    <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
       <WorkToMake>15000</WorkToMake>
       <SightsEfficiency>1</SightsEfficiency>
@@ -534,7 +524,7 @@
     </weaponTags>
     <costList>
       <Steel>50</Steel>
-      <Component>2</Component>
+      <ComponentIndustrial>2</ComponentIndustrial>
       <WoodLog>15</WoodLog>
     </costList>
     <recipeMaker>
@@ -548,7 +538,7 @@
         <defaultProjectile>Bullet_762x39mmSoviet_FMJ</defaultProjectile>
         <warmupTime>1.1</warmupTime>
         <range>48</range>
-        <soundCast>ShotAssaultRifle</soundCast>
+        <soundCast>Shot_AssaultRifle</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
@@ -571,12 +561,11 @@
           </capacities>
           <power>9</power>
           <cooldownTime>1.8</cooldownTime>
-          <commonality>1.5</commonality>
+          <chanceFactor>1.5</chanceFactor>
           <armorPenetration>0.11</armorPenetration>
           <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
         </li>
         <li Class="CombatExtended.ToolCE">
-        	<id>barrelblunt</id>
           <label>barrel</label>
           <capacities>
             <li>Blunt</li>
@@ -587,7 +576,6 @@
           <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
         </li>
         <li Class="CombatExtended.ToolCE">
-        	<id>barrelpoke</id>
           <label>muzzle</label>
           <capacities>
             <li>Poke</li>
@@ -602,7 +590,7 @@
   
   <!-- ==================== AK-47 ==================== -->
   
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun_CE">
     <defName>CE_Gun_AKFortySeven</defName>
     <label>AK-47</label>
     <description>Ancient military weapon chambered for an intermediate cartridge. The simple design makes it easy to assemble and gives it high reliability.</description>
@@ -610,7 +598,7 @@
       <texPath>Things/Weapons/AK47</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>InteractRifle</soundInteract>
+    <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
       <WorkToMake>27000</WorkToMake>
       <SightsEfficiency>1</SightsEfficiency>
@@ -622,7 +610,7 @@
     </statBases>
     <costList>
       <Steel>45</Steel>
-      <Component>5</Component>
+      <ComponentIndustrial>5</ComponentIndustrial>
       <WoodLog>10</WoodLog>
     </costList>
     <verbs>
@@ -635,7 +623,7 @@
         <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
         <warmupTime>1.1</warmupTime>
         <range>44</range>
-        <soundCast>ShotAssaultRifle</soundCast>
+        <soundCast>Shot_AssaultRifle</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
@@ -663,12 +651,11 @@
           </capacities>
           <power>9</power>
           <cooldownTime>1.8</cooldownTime>
-          <commonality>1.5</commonality>
+          <chanceFactor>1.5</chanceFactor>
           <armorPenetration>0.11</armorPenetration>
           <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
         </li>
         <li Class="CombatExtended.ToolCE">
-        	<id>barrelblunt</id>
           <label>barrel</label>
           <capacities>
             <li>Blunt</li>
@@ -679,7 +666,6 @@
           <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
         </li>
         <li Class="CombatExtended.ToolCE">
-        	<id>barrelpoke</id>
           <label>muzzle</label>
           <capacities>
             <li>Poke</li>
@@ -694,7 +680,7 @@
   
   <!-- ==================== AK-12 ==================== -->
   
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun_CE">
     <defName>CE_Gun_AKTwelve</defName>
     <label>AK-12</label>
     <description>Ancient assault rifle design with a special high capacity magazine.</description>
@@ -702,7 +688,7 @@
       <texPath>Things/Weapons/AK12</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>InteractRifle</soundInteract>
+    <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
       <WorkToMake>32000</WorkToMake>
       <SightsEfficiency>1</SightsEfficiency>
@@ -714,7 +700,7 @@
     </statBases>
     <costList>
       <Steel>40</Steel>
-      <Component>5</Component>
+      <ComponentIndustrial>5</ComponentIndustrial>
       <Chemfuel>10</Chemfuel>
     </costList>
     <verbs>
@@ -727,7 +713,7 @@
         <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
         <warmupTime>1.1</warmupTime>
         <range>51</range>
-        <soundCast>ShotAssaultRifle</soundCast>
+        <soundCast>Shot_AssaultRifle</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
@@ -755,12 +741,11 @@
           </capacities>
           <power>9</power>
           <cooldownTime>1.8</cooldownTime>
-          <commonality>1.5</commonality>
+          <chanceFactor>1.5</chanceFactor>
           <armorPenetration>0.11</armorPenetration>
           <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
         </li>
         <li Class="CombatExtended.ToolCE">
-        	<id>barrelblunt</id>
           <label>barrel</label>
           <capacities>
             <li>Blunt</li>
@@ -771,7 +756,6 @@
           <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
         </li>
         <li Class="CombatExtended.ToolCE">
-        	<id>barrelpoke</id>
           <label>muzzle</label>
           <capacities>
             <li>Poke</li>
@@ -786,7 +770,7 @@
   
   <!-- ==================== SVD ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun_CE">
     <defName>CE_Gun_SVD</defName>
     <label>SVD</label>
     <description>Sniper rifle with a fairly simple assembly. It is known for its reliability.</description>
@@ -794,7 +778,7 @@
       <texPath>Things/Weapons/SVD</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>InteractRifle</soundInteract>
+    <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
       <WorkToMake>23000</WorkToMake>
       <SightsEfficiency>2.24</SightsEfficiency>
@@ -806,7 +790,7 @@
     </statBases>
     <costList>
       <Steel>60</Steel>
-      <Component>4</Component>
+      <ComponentIndustrial>4</ComponentIndustrial>
       <WoodLog>10</WoodLog>
     </costList>
     <verbs>
@@ -816,7 +800,7 @@
         <defaultProjectile>Bullet_762x54mmR_FMJ</defaultProjectile>
         <warmupTime>1.3</warmupTime>
         <range>75</range>
-        <soundCast>ShotSniperRifle</soundCast>
+        <soundCast>Shot_SniperRifle</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
@@ -846,12 +830,11 @@
           </capacities>
           <power>9</power>
           <cooldownTime>1.8</cooldownTime>
-          <commonality>1.5</commonality>
+          <chanceFactor>1.5</chanceFactor>
           <armorPenetration>0.11</armorPenetration>
           <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
         </li>
         <li Class="CombatExtended.ToolCE">
-        	<id>barrelblunt</id>
           <label>barrel</label>
           <capacities>
             <li>Blunt</li>
@@ -862,7 +845,6 @@
           <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
         </li>
         <li Class="CombatExtended.ToolCE">
-        	<id>barrelpoke</id>
           <label>muzzle</label>
           <capacities>
             <li>Poke</li>
@@ -877,7 +859,7 @@
   
   <!-- ==================== Tac-50 ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun_CE">
     <defName>CE_Gun_TacFifty</defName>
     <label>Tac-50</label>
     <description>Ancient bolt-action anti-materiel rifle. Combines a large caliber cartridge with a high-magnification scope for sniping at extreme range.</description>
@@ -885,7 +867,7 @@
       <texPath>Things/Weapons/Tac50</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>InteractRifle</soundInteract>
+    <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
       <WorkToMake>44500</WorkToMake>
       <SightsEfficiency>3.5</SightsEfficiency>
@@ -897,7 +879,7 @@
     </statBases>
     <costList>
       <Steel>90</Steel>
-      <Component>6</Component>
+      <ComponentIndustrial>6</ComponentIndustrial>
       <Chemfuel>20</Chemfuel>
     </costList>
     <verbs>
@@ -907,7 +889,7 @@
         <defaultProjectile>Bullet_50BMG_FMJ</defaultProjectile>
         <warmupTime>3.85</warmupTime>
         <range>86</range>
-        <soundCast>ShotSniperRifle</soundCast>
+        <soundCast>Shot_SniperRifle</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
@@ -937,12 +919,11 @@
           </capacities>
           <power>9</power>
           <cooldownTime>1.8</cooldownTime>
-          <commonality>1.5</commonality>
+          <chanceFactor>1.5</chanceFactor>
           <armorPenetration>0.11</armorPenetration>
           <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
         </li>
         <li Class="CombatExtended.ToolCE">
-        	<id>barrelblunt</id>
           <label>barrel</label>
           <capacities>
             <li>Blunt</li>
@@ -953,7 +934,6 @@
           <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
         </li>
         <li Class="CombatExtended.ToolCE">
-        	<id>barrelpoke</id>
           <label>muzzle</label>
           <capacities>
             <li>Poke</li>
@@ -976,7 +956,7 @@
       <texPath>Things/Weapons/PTRS</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>InteractRifle</soundInteract>
+    <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
       <WorkToMake>44500</WorkToMake>
       <SightsEfficiency>1.0</SightsEfficiency>
@@ -988,7 +968,7 @@
     </statBases>
     <costList>
       <Steel>145</Steel>
-      <Component>2</Component>
+      <ComponentIndustrial>2</ComponentIndustrial>
       <WoodLog>15</WoodLog>
     </costList>
     <verbs>
@@ -1024,12 +1004,11 @@
           </capacities>
           <power>9</power>
           <cooldownTime>1.8</cooldownTime>
-          <commonality>1.5</commonality>
+          <chanceFactor>1.5</chanceFactor>
           <armorPenetration>0.11</armorPenetration>
           <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
         </li>
         <li Class="CombatExtended.ToolCE">
-        	<id>barrelblunt</id>
           <label>barrel</label>
           <capacities>
             <li>Blunt</li>
@@ -1040,7 +1019,6 @@
           <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
         </li>
         <li Class="CombatExtended.ToolCE">
-        	<id>barrelpoke</id>
           <label>muzzle</label>
           <capacities>
             <li>Poke</li>
@@ -1058,7 +1036,7 @@
 
   <!-- ==================== M60 machine gun ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun_CE">
     <defName>CE_Gun_MSixty</defName>
     <label>M60</label>
     <description>A belt-fed general-purpose machine gun. Lots of firepower but heavy and cumbersome to carry around. Commonly nicknamed "The Pig".</description>
@@ -1066,7 +1044,7 @@
       <texPath>Things/Weapons/M60</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>InteractRifle</soundInteract>
+    <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
       <WorkToMake>40500</WorkToMake>
       <SightsEfficiency>1</SightsEfficiency>
@@ -1078,7 +1056,7 @@
     </statBases>
     <costList>
       <Steel>85</Steel>
-      <Component>6</Component>
+      <ComponentIndustrial>6</ComponentIndustrial>
       <Chemfuel>15</Chemfuel>
     </costList>
     <verbs>
@@ -1091,7 +1069,7 @@
         <range>75</range>
         <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
         <burstShotCount>10</burstShotCount>
-        <soundCast>ShotMinigun</soundCast>
+        <soundCast>Shot_Minigun</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
         <targetParams>
@@ -1126,12 +1104,11 @@
           </capacities>
           <power>9</power>
           <cooldownTime>1.8</cooldownTime>
-          <commonality>1.5</commonality>
+          <chanceFactor>1.5</chanceFactor>
           <armorPenetration>0.11</armorPenetration>
           <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
         </li>
         <li Class="CombatExtended.ToolCE">
-        	<id>barrelblunt</id>
           <label>barrel</label>
           <capacities>
             <li>Blunt</li>
@@ -1142,7 +1119,6 @@
           <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
         </li>
         <li Class="CombatExtended.ToolCE">
-        	<id>barrelpoke</id>
           <label>muzzle</label>
           <capacities>
             <li>Poke</li>
@@ -1157,7 +1133,7 @@
   
   <!-- ==================== RPD ==================== -->
   
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun_CE">
     <defName>CE_Gun_RPD</defName>
     <label>RPD</label>
     <description>Ancient light machine gun design. The precursor to modern squad automatic weapons, it is comparatively light for a weapon of its class.</description>
@@ -1165,7 +1141,7 @@
       <texPath>Things/Weapons/RPD</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>InteractRifle</soundInteract>
+    <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
       <WorkToMake>35000</WorkToMake>
       <SightsEfficiency>1</SightsEfficiency>
@@ -1177,7 +1153,7 @@
     </statBases>
     <costList>
       <Steel>70</Steel>
-      <Component>6</Component>
+      <ComponentIndustrial>6</ComponentIndustrial>
       <WoodLog>15</WoodLog>
     </costList>
     <verbs>
@@ -1190,7 +1166,7 @@
         <range>62</range>
         <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
         <burstShotCount>10</burstShotCount>
-        <soundCast>ShotMinigun</soundCast>
+        <soundCast>Shot_Minigun</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
         <targetParams>
@@ -1225,12 +1201,11 @@
           </capacities>
           <power>9</power>
           <cooldownTime>1.8</cooldownTime>
-          <commonality>1.5</commonality>
+          <chanceFactor>1.5</chanceFactor>
           <armorPenetration>0.11</armorPenetration>
           <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
         </li>
         <li Class="CombatExtended.ToolCE">
-        	<id>barrelblunt</id>
           <label>barrel</label>
           <capacities>
             <li>Blunt</li>
@@ -1241,7 +1216,6 @@
           <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
         </li>
         <li Class="CombatExtended.ToolCE">
-        	<id>barrelpoke</id>
           <label>muzzle</label>
           <capacities>
             <li>Poke</li>
@@ -1256,7 +1230,7 @@
   
   <!-- ==================== PKM ==================== -->
   
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun_CE">
     <defName>CE_Gun_PKM</defName>
     <label>PKM</label>
     <description>Ancient general-purpose machine gun. The rugged design makes it a popular weapon for the people inhabiting Rimworlds.</description>
@@ -1264,7 +1238,7 @@
       <texPath>Things/Weapons/PKM</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>InteractRifle</soundInteract>
+    <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
       <WorkToMake>36000</WorkToMake>
       <SightsEfficiency>1</SightsEfficiency>
@@ -1276,7 +1250,7 @@
     </statBases>
     <costList>
       <Steel>80</Steel>
-      <Component>6</Component>
+      <ComponentIndustrial>6</ComponentIndustrial>
       <WoodLog>10</WoodLog>
     </costList>
     <verbs>
@@ -1289,7 +1263,7 @@
         <range>75</range>
         <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
         <burstShotCount>10</burstShotCount>
-        <soundCast>ShotMinigun</soundCast>
+        <soundCast>Shot_Minigun</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
         <targetParams>
@@ -1324,12 +1298,11 @@
           </capacities>
           <power>9</power>
           <cooldownTime>1.8</cooldownTime>
-          <commonality>1.5</commonality>
+          <chanceFactor>1.5</chanceFactor>
           <armorPenetration>0.11</armorPenetration>
           <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
         </li>
         <li Class="CombatExtended.ToolCE">
-        	<id>barrelblunt</id>
           <label>barrel</label>
           <capacities>
             <li>Blunt</li>
@@ -1340,7 +1313,6 @@
           <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
         </li>
         <li Class="CombatExtended.ToolCE">
-        	<id>barrelpoke</id>
           <label>muzzle</label>
           <capacities>
             <li>Poke</li>
@@ -1363,7 +1335,7 @@
       <texPath>Things/Weapons/RPG/RPG_HEAT</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>InteractRifle</soundInteract>
+    <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
       <WorkToMake>25500</WorkToMake>
       <SightsEfficiency>2.16</SightsEfficiency>
@@ -1375,7 +1347,7 @@
     </statBases>
     <costList>
       <Steel>70</Steel>
-      <Component>4</Component>
+      <ComponentIndustrial>4</ComponentIndustrial>
       <WoodLog>5</WoodLog>
     </costList>
     <weaponTags>
@@ -1388,7 +1360,6 @@
         <defaultProjectile>Bullet_RPG7Grenade_HEAT</defaultProjectile>
         <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
         <warmupTime>2.0</warmupTime>
-        <forcedMissRadius>2.8</forcedMissRadius>
         <range>40</range>  <!-- grenades at 12.9, rockets at 40 -->
         <minRange>5</minRange>
         <targetParams>
@@ -1420,12 +1391,11 @@
           </capacities>
           <power>9</power>
           <cooldownTime>1.8</cooldownTime>
-          <commonality>1.5</commonality>
+          <chanceFactor>1.5</chanceFactor>
           <armorPenetration>0.11</armorPenetration>
           <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
         </li>
         <li Class="CombatExtended.ToolCE">
-        	<id>barrelblunt</id>
           <label>barrel</label>
           <capacities>
             <li>Blunt</li>
@@ -1436,7 +1406,6 @@
           <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
         </li>
         <li Class="CombatExtended.ToolCE">
-        	<id>barrelpoke</id>
           <label>muzzle</label>
           <capacities>
             <li>Poke</li>
@@ -1459,7 +1428,7 @@
       <texPath>Things/Weapons/M72</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>InteractRifle</soundInteract>
+    <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
       <MarketValue>51</MarketValue>
       <SightsEfficiency>0.5</SightsEfficiency>
@@ -1500,12 +1469,11 @@
           </capacities>
           <power>9</power>
           <cooldownTime>1.8</cooldownTime>
-          <commonality>1.5</commonality>
+          <chanceFactor>1.5</chanceFactor>
           <armorPenetration>0.11</armorPenetration>
           <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
         </li>
         <li Class="CombatExtended.ToolCE">
-        	<id>barrelblunt</id>
           <label>barrel</label>
           <capacities>
             <li>Blunt</li>
@@ -1516,7 +1484,6 @@
           <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
         </li>
         <li Class="CombatExtended.ToolCE">
-        	<id>barrelpoke</id>
           <label>muzzle</label>
           <capacities>
             <li>Poke</li>
@@ -1555,7 +1522,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>Component</li>
+            <li>ComponentIndustrial</li>
           </thingDefs>
         </filter>
         <count>3</count>
@@ -1565,7 +1532,7 @@
       <thingDefs>
         <li>Steel</li>
         <li>FSX</li>
-        <li>Component</li>
+        <li>ComponentIndustrial</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
@@ -1584,7 +1551,7 @@
       <texPath>Things/Weapons/MilkorMGL</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>InteractRifle</soundInteract>
+    <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
       <WorkToMake>25500</WorkToMake>
       <SightsEfficiency>1.1</SightsEfficiency>
@@ -1596,7 +1563,7 @@
     </statBases>
     <costList>
       <Steel>40</Steel>
-      <Component>3</Component>
+      <ComponentIndustrial>3</ComponentIndustrial>
       <Chemfuel>10</Chemfuel>
     </costList>
     <weaponTags>
@@ -1609,7 +1576,6 @@
         <defaultProjectile>Bullet_40x46mmGrenade_HE</defaultProjectile>
         <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
         <warmupTime>1</warmupTime>
-        <forcedMissRadius>2.8</forcedMissRadius>
         <range>40</range>
         <minRange>5</minRange>
         <targetParams>
@@ -1641,12 +1607,11 @@
           </capacities>
           <power>9</power>
           <cooldownTime>1.8</cooldownTime>
-          <commonality>1.5</commonality>
+          <chanceFactor>1.5</chanceFactor>
           <armorPenetration>0.11</armorPenetration>
           <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
         </li>
         <li Class="CombatExtended.ToolCE">
-        	<id>barrelblunt</id>
           <label>barrel</label>
           <capacities>
             <li>Blunt</li>
@@ -1657,7 +1622,6 @@
           <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
         </li>
         <li Class="CombatExtended.ToolCE">
-        	<id>barrelpoke</id>
           <label>muzzle</label>
           <capacities>
             <li>Poke</li>
@@ -1672,7 +1636,7 @@
 
   <!-- ==================== Charge LMG ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun_CE">
     <defName>CE_Gun_ChargeLMG</defName>
     <label>L-20 LMG</label>
     <description>Charged-shot light machine gun designed for suppression.</description>
@@ -1680,7 +1644,7 @@
       <texPath>Things/Weapons/ChargeLMG</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>InteractChargeRifle</soundInteract>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
     <statBases>
       <WorkToMake>57000</WorkToMake>
       <SightsEfficiency>1.1</SightsEfficiency>
@@ -1693,7 +1657,7 @@
     <costList>
       <Steel>65</Steel>
       <Plasteel>30</Plasteel>
-      <Component>11</Component>
+      <ComponentIndustrial>11</ComponentIndustrial>
       <Chemfuel>15</Chemfuel>
     </costList>
     <verbs>
@@ -1706,7 +1670,7 @@
         <range>75</range>
         <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
         <burstShotCount>10</burstShotCount>
-        <soundCast>ShotChargeRifle</soundCast>
+        <soundCast>Shot_ChargeRifle</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
         <targetParams>
@@ -1742,12 +1706,11 @@
           </capacities>
           <power>9</power>
           <cooldownTime>1.8</cooldownTime>
-          <commonality>1.5</commonality>
+          <chanceFactor>1.5</chanceFactor>
           <armorPenetration>0.11</armorPenetration>
           <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
         </li>
         <li Class="CombatExtended.ToolCE">
-        	<id>barrelblunt</id>
           <label>barrel</label>
           <capacities>
             <li>Blunt</li>
@@ -1758,7 +1721,6 @@
           <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
         </li>
         <li Class="CombatExtended.ToolCE">
-        	<id>barrelpoke</id>
           <label>muzzle</label>
           <capacities>
             <li>Poke</li>
@@ -1773,7 +1735,7 @@
 
   <!-- ==================== Charge Sniper ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun_CE">
     <defName>CE_Gun_ChargeSniperRifle</defName>
     <label>R-11 precision rifle</label>
     <description>Charged-shot sniper rifle equipped with advanced optics for long-range shooting.</description>
@@ -1781,7 +1743,7 @@
       <texPath>Things/Weapons/ChargeSniper</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>InteractChargeRifle</soundInteract>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
     <statBases>
       <WorkToMake>50500</WorkToMake>
       <SightsEfficiency>2.6</SightsEfficiency>
@@ -1794,7 +1756,7 @@
     <costList>
       <Steel>60</Steel>
       <Plasteel>30</Plasteel>
-      <Component>10</Component>
+      <ComponentIndustrial>10</ComponentIndustrial>
       <Chemfuel>15</Chemfuel>
     </costList>
     <verbs>
@@ -1804,7 +1766,7 @@
         <defaultProjectile>Bullet_8x35mmCharged</defaultProjectile>
         <warmupTime>1.6</warmupTime>
         <range>75</range>
-        <soundCast>ShotChargeRifle</soundCast>
+        <soundCast>Shot_ChargeRifle</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
@@ -1834,12 +1796,11 @@
           </capacities>
           <power>9</power>
           <cooldownTime>1.8</cooldownTime>
-          <commonality>1.5</commonality>
+          <chanceFactor>1.5</chanceFactor>
           <armorPenetration>0.11</armorPenetration>
           <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
         </li>
         <li Class="CombatExtended.ToolCE">
-        	<id>barrelblunt</id>
           <label>barrel</label>
           <capacities>
             <li>Blunt</li>
@@ -1850,7 +1811,6 @@
           <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
         </li>
         <li Class="CombatExtended.ToolCE">
-        	<id>barrelpoke</id>
           <label>muzzle</label>
           <capacities>
             <li>Poke</li>
