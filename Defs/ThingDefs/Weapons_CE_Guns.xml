@@ -768,6 +768,95 @@
       </tools>
   </ThingDef>
   
+  <!-- ==================== AKS-74U ==================== -->
+  
+  <ThingDef ParentName="BaseHumanMakeableGun_CE">
+    <defName>CE_Gun_AKSSeventyFourU</defName>
+    <label>AKS-74U</label>
+    <description>Ancient sub-carbine design, combining the compactness of an SMG with the armor-piercing capabilities of a rifle round.</description>
+    <graphicData>
+      <texPath>Things/Weapons/AKS74U</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <statBases>
+      <WorkToMake>29000</WorkToMake>
+      <SightsEfficiency>1</SightsEfficiency>
+      <ShotSpread>0.14</ShotSpread>
+      <SwayFactor>1.01</SwayFactor>
+      <Bulk>4.9</Bulk>
+      <Mass>2.7</Mass>
+      <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>40</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>1.53</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_545x39mmSoviet_FMJ</defaultProjectile>
+        <burstShotCount>6</burstShotCount>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <warmupTime>0.6</warmupTime>
+        <range>40</range>
+        <soundCast>Shot_AssaultRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>30</magazineSize>
+        <reloadTime>4</reloadTime>
+        <ammoSet>AmmoSet_545x39mmSoviet</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>false</aiUseBurstMode>
+        <aiAimMode>AimedShot</aiAimMode>
+        <aimedBurstShotCount>3</aimedBurstShotCount>
+      </li>
+    </comps>
+    <recipeMaker>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+    </recipeMaker>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>stock</label>
+          <capacities>
+            <li>Blunt</li>
+          </capacities>
+          <power>9</power>
+          <cooldownTime>1.8</cooldownTime>
+          <chanceFactor>1.5</chanceFactor>
+          <armorPenetration>0.11</armorPenetration>
+          <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>barrel</label>
+          <capacities>
+            <li>Blunt</li>
+          </capacities>
+          <power>10</power>
+          <cooldownTime>1.9</cooldownTime>
+          <armorPenetration>0.118</armorPenetration>
+          <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>muzzle</label>
+          <capacities>
+            <li>Poke</li>
+          </capacities>
+          <power>10</power>
+          <cooldownTime>1.9</cooldownTime>
+          <armorPenetration>0.086</armorPenetration>
+          <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+        </li>
+      </tools>
+  </ThingDef>
+  
   <!-- ==================== SVD ==================== -->
 
   <ThingDef ParentName="BaseHumanMakeableGun_CE">
