@@ -1661,6 +1661,7 @@
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <recoilAmount>2.93</recoilAmount>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_40x46mmGrenade_HE</defaultProjectile>
         <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
@@ -1876,6 +1877,103 @@
     </weaponTags>
     <recipeMaker>
       <researchPrerequisite>ChargedShot</researchPrerequisite>
+    </recipeMaker>
+      <tools>
+        <li Class="CombatExtended.ToolCE">
+          <label>stock</label>
+          <capacities>
+            <li>Blunt</li>
+          </capacities>
+          <power>9</power>
+          <cooldownTime>1.8</cooldownTime>
+          <chanceFactor>1.5</chanceFactor>
+          <armorPenetration>0.11</armorPenetration>
+          <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>barrel</label>
+          <capacities>
+            <li>Blunt</li>
+          </capacities>
+          <power>10</power>
+          <cooldownTime>1.9</cooldownTime>
+          <armorPenetration>0.118</armorPenetration>
+          <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+        </li>
+        <li Class="CombatExtended.ToolCE">
+          <label>muzzle</label>
+          <capacities>
+            <li>Poke</li>
+          </capacities>
+          <power>10</power>
+          <cooldownTime>1.9</cooldownTime>
+          <armorPenetration>0.086</armorPenetration>
+          <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+        </li>
+      </tools>
+  </ThingDef>
+
+  <!-- ==================== Flamethrower ==================== -->
+  
+  <ThingDef ParentName="BaseMakeableGun">
+    <defName>CE_Gun_Flamethrower</defName>
+    <label>RM2 Flamethrower</label>
+    <description>Unconventional flamethrower design that uses replaceable canisters of pressurized fuel canisters instead of a back-mounted tank. Less encumbering but needs to reload frequently.</description>
+    <graphicData>
+      <texPath>Things/Weapons/Flamethrower</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <statBases>
+      <WorkToMake>25500</WorkToMake>
+      <SightsEfficiency>1</SightsEfficiency>
+      <ShotSpread>0.15</ShotSpread>
+      <SwayFactor>1.35</SwayFactor>
+      <Bulk>8</Bulk>
+      <Mass>5.5</Mass>
+      <RangedWeapon_Cooldown>0.39</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>40</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <Chemfuel>10</Chemfuel>
+    </costList>
+    <weaponTags>
+      <li>GunHeavy</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <recoilAmount>0.85</recoilAmount>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Flamethrower_Prometheum</defaultProjectile>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <warmupTime>1.1</warmupTime>
+        <range>11</range>
+        <minRange>3</minRange>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <soundCast>HissFlamethrower</soundCast>
+        <muzzleFlashScale>0</muzzleFlashScale>
+        <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+        <burstShotCount>20</burstShotCount>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>40</magazineSize>
+        <reloadTime>5</reloadTime>
+        <ammoSet>AmmoSet_Flamethrower</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>false</aiUseBurstMode>
+        <aimedBurstShotCount>10</aimedBurstShotCount>
+        <aiAimMode>SuppressFire</aiAimMode>
+      </li>
+    </comps>
+    <recipeMaker>
+      <researchPrerequisite>CE_Launchers</researchPrerequisite>
     </recipeMaker>
       <tools>
         <li Class="CombatExtended.ToolCE">
