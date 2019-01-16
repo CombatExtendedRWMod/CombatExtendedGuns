@@ -1967,7 +1967,7 @@
         <ammoSet>AmmoSet_Flamethrower</ammoSet>
       </li>
       <li Class="CombatExtended.CompProperties_FireModes">
-        <aiUseBurstMode>false</aiUseBurstMode>
+        <aiUseBurstMode>true</aiUseBurstMode>
         <aimedBurstShotCount>10</aimedBurstShotCount>
         <aiAimMode>SuppressFire</aiAimMode>
       </li>
