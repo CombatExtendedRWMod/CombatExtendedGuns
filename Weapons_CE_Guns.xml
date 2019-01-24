@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- M72 LAW -->
+
+  <MakeM72LAW.label>сделать M72 LAW x5</MakeM72LAW.label>
+  <MakeM72LAW.description>Собрать 5 установок M72 LAW.</MakeM72LAW.description>
+  <MakeM72LAW.jobString>Делает M72 LAW.</MakeM72LAW.jobString>
+
+
+</LanguageData>
