@@ -414,7 +414,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun_CE">
     <defName>CE_Gun_PPSh_Drum</defName>
     <label>PPSh-41</label>
-    <description>Soviet submachine gun that is famous for its high rate of fire and large drum magazines.</description>
+    <description>Ancient submachine gun that is famous for its high rate of fire and large drum magazines.</description>
     <graphicData>
       <texPath>Things/Weapons/PPSh41</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -951,9 +951,9 @@
   <!-- ==================== M2 Carbine ==================== -->
 
   <ThingDef ParentName="BaseHumanMakeableGun_CE">
-    <defName>CE_flyfire2002_Gun_M2Carbine</defName>
+    <defName>CE_Gun_M2Carbine</defName>
     <label>M2 Carbine</label>
-    <description>US full auto carbine since the end of WWII until M16 came about.</description>
+    <description>Ancient full auto carbine that came before the M16. Lacks AP cartridges.</description>
     <graphicData>
       <texPath>Things/Weapons/M2Carbine</texPath>
       <graphicClass>Graphic_Single</graphicClass>

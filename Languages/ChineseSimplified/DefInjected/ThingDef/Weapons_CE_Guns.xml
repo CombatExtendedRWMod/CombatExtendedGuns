@@ -17,6 +17,10 @@
 <CE_Gun_KrissVector.label>Kriss Vector冲锋枪</CE_Gun_KrissVector.label>
 
 <CE_Gun_KrissVector.description>拥有一个独特的形状，用于近距离战斗的轻量级冲锋枪。</CE_Gun_KrissVector.description>
+  
+<CE_Gun_PPSh_Drum.label>PPSh-41冲锋枪</CE_Gun_PPSh_Drum.label>
+
+<CE_Gun_PPSh_Drum.description>老式高射速大容量冲锋枪。</CE_Gun_PPSh_Drum.description>
 
 <CE_Gun_FNFAL.label>FAL自动步枪</CE_Gun_FNFAL.label>
 
@@ -38,6 +42,10 @@
 
 <CE_Gun_AKSSeventyFourU.description>老式突击步枪，其融合了冲锋枪的紧凑性及步枪的穿透性。</CE_Gun_AKSSeventyFourU.description>
 
+<CE_Gun_M2Carbine.label>M2卡宾枪</CE_Gun_M2Carbine.label>
+
+<CE_Gun_M2Carbine.description>老实全自动卡宾枪，是M16之前的单兵全自动火力。没有穿甲弹可供选择。</CE_Gun_M2Carbine.description>
+  
 <CE_Gun_SVD.label>SVD狙击步枪</CE_Gun_SVD.label>
 
 <CE_Gun_SVD.description>以可靠性著称的一把简单紧凑的狙击步枪。</CE_Gun_SVD.description>
