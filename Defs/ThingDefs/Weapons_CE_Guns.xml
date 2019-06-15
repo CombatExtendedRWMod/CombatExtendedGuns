@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ThingDefs>
-  <ThingDef Name="BaseGun" Abstract="True">
+  <ThingDef Name="BaseGun_CE" Abstract="True">
     <category>Item</category>
     <thingClass>ThingWithComps</thingClass>
     <equipmentType>Primary</equipmentType>
@@ -21,18 +21,33 @@
     <alwaysHaulable>True</alwaysHaulable>
     <tickerType>Never</tickerType>
     <techLevel>Industrial</techLevel>
-    <smeltable>true</smeltable>
     <thingCategories>
       <li>WeaponsRanged</li>
     </thingCategories>
-    <inspectorTabs>
-      <li>ITab_Art</li>
-    </inspectorTabs>
     <comps>
       <li Class="CompProperties_Forbiddable" />
       <li>
         <compClass>CompEquippable</compClass>
       </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef Name="BaseMakeableGun_CE" ParentName="BaseGun_CE" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+    </recipeMaker>
+    <smeltable>true</smeltable>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <comps>
       <li>
         <compClass>CompQuality</compClass>
       </li>
@@ -44,20 +59,7 @@
     </comps>
   </ThingDef>
 
-  <ThingDef Name="BaseMakeableGun" ParentName="BaseGun" Abstract="True">
-    <recipeMaker>
-      <workSpeedStat>SmithingSpeed</workSpeedStat>
-      <workSkill>Crafting</workSkill>
-      <effectWorking>Smith</effectWorking>
-      <soundWorking>Recipe_Smith</soundWorking>
-      <recipeUsers>
-        <li>TableMachining</li>
-      </recipeUsers>
-      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
-    </recipeMaker>
-  </ThingDef>
-
-  <ThingDef Name="BaseHumanMakeableGun" ParentName="BaseMakeableGun" Abstract="True">
+  <ThingDef Name="BaseHumanMakeableGun_CE" ParentName="BaseMakeableGun_CE" Abstract="True">
     <weaponTags>
       <li>Gun</li>
     </weaponTags>
@@ -65,7 +67,7 @@
   
   <!-- ==================== Taurus Judge ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun_CE">
     <defName>CE_Gun_TaurusJudge</defName>
     <label>Taurus Judge</label>
     <description>Ancient revolver designed for self-defense. Fires a powerful pistol cartridge as well as small shotgun shells.</description>
@@ -114,7 +116,7 @@
   
   <!-- ==================== P7 ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun_CE">
     <defName>CE_Gun_PSeven</defName>
     <label>P7</label>
     <description>Ancient pistol design. Used to be popular with police forces due to its compact size.</description>
@@ -167,7 +169,7 @@
   
   <!-- ==================== USAS-12 ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun_CE">
     <defName>CE_Gun_USASTwelve</defName>
     <label>USAS-12</label>
     <description>Ancient assault shotgun designed for full-auto fire in close quarters.</description>
@@ -222,7 +224,7 @@
   
   <!-- ==================== KRISS Vector ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun_CE">
     <defName>CE_Gun_KrissVector</defName>
     <label>KRISS Vector</label>
     <description>A uniquely shaped, lightweight SMG designed for close-quarters fighting.</description>
@@ -277,7 +279,7 @@
   
   <!-- ==================== FN FAL ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun_CE">
     <defName>CE_Gun_FNFAL</defName>
     <label>FN FAL</label>
     <description>Ancient military assault rifle firing a full-power rifle cartridge.</description>
@@ -334,7 +336,7 @@
 
   <!-- ==================== SKS ==================== -->
   
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun_CE">
     <defName>CE_Gun_SKS</defName>
     <label>SKS</label>
     <description>Ancient battle rifle. Fires an intermediate rifle cartridge and is a popular choice for long-range engagements.</description>
@@ -384,7 +386,7 @@
   
   <!-- ==================== AK-47 ==================== -->
   
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun_CE">
     <defName>CE_Gun_AKFortySeven</defName>
     <label>AK-47</label>
     <description>Ancient military weapon chambered for an intermediate cartridge. The simple design makes it easy to assemble and gives it high reliability.</description>
@@ -441,7 +443,7 @@
   
   <!-- ==================== AK-12 ==================== -->
   
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun_CE">
     <defName>CE_Gun_AKTwelve</defName>
     <label>AK-12</label>
     <description>Ancient assault rifle design with a special high capacity magazine.</description>
@@ -498,7 +500,7 @@
   
   <!-- ==================== SVD ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun_CE">
     <defName>CE_Gun_SVD</defName>
     <label>SVD</label>
     <description>Sniper rifle with a fairly simple assembly. It is known for its reliability.</description>
@@ -554,7 +556,7 @@
   
   <!-- ==================== Tac-50 ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun_CE">
     <defName>CE_Gun_TacFifty</defName>
     <label>Tac-50</label>
     <description>Ancient bolt-action anti-materiel rifle. Combines a large caliber cartridge with a high-magnification scope for sniping at extreme range.</description>
@@ -610,7 +612,7 @@
   
   <!-- ==================== PTRS ==================== -->
 
-  <ThingDef ParentName="BaseMakeableGun">
+  <ThingDef ParentName="BaseMakeableGun_CE">
     <defName>CE_Gun_PTRS</defName>
     <label>PTRS-41</label>
     <description>Ancient anti-tank rifle, originally designed for use against primitive armored vehicles. Fires a very powerful cartridge but the large size and weight make it unwieldy.</description>
@@ -659,7 +661,7 @@
 
   <!-- ==================== M60 machine gun ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun_CE">
     <defName>CE_Gun_MSixty</defName>
     <label>M60</label>
     <description>A belt-fed general-purpose machine gun. Lots of firepower but heavy and cumbersome to carry around. Commonly nicknamed "The Pig".</description>
@@ -723,7 +725,7 @@
   
   <!-- ==================== RPD ==================== -->
   
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun_CE">
     <defName>CE_Gun_RPD</defName>
     <label>RPD</label>
     <description>Ancient light machine gun design. The precursor to modern squad automatic weapons, it is comparatively light for a weapon of its class.</description>
@@ -784,7 +786,7 @@
   
   <!-- ==================== PKM ==================== -->
   
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun_CE">
     <defName>CE_Gun_PKM</defName>
     <label>PKM</label>
     <description>Ancient general-purpose machine gun. The rugged design makes it a popular weapon for the people inhabiting Rimworlds.</description>
@@ -848,7 +850,7 @@
 
   <!-- ==================== RPG-7 ==================== -->
   
-  <ThingDef ParentName="BaseMakeableGun">
+  <ThingDef ParentName="BaseMakeableGun_CE">
     <defName>CE_Gun_RPGSeven</defName>
     <label>RPG-7</label>
     <description>A short rocket-propelled grenade launcher that fires single projectiles which explode on impact. A relatively very cheap, multiple use alternative to single-shot launchers.</description>
@@ -909,7 +911,7 @@
 
   <!-- ==================== M72 LAW ==================== -->
   
-  <ThingDef ParentName="BaseGun">
+  <ThingDef ParentName="BaseGun_CE">
     <defName>CE_Gun_M72LAW</defName>
     <label>M72 LAW</label>
     <description>A lightweight single-use anti-tank launcher. Designed to provide soldiers in the field with a compact anti-armor weapon.</description>
@@ -999,7 +1001,7 @@
 
   <!-- ==================== Milkor MGL ==================== -->
   
-  <ThingDef ParentName="BaseMakeableGun">
+  <ThingDef ParentName="BaseMakeableGun_CE">
     <defName>CE_Gun_MilkorMGL</defName>
     <label>Milkor MGL</label>
     <description>Ancient, man-portable grenade launcher. The 6-shot cylinder allows for a relatively high volume of fire.</description>
@@ -1060,7 +1062,7 @@
 
   <!-- ==================== Charge LMG ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun_CE">
     <defName>CE_Gun_ChargeLMG</defName>
     <label>L-20 LMG</label>
     <description>Charged-shot light machine gun designed for suppression.</description>
@@ -1126,7 +1128,7 @@
 
   <!-- ==================== Charge Sniper ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun_CE">
     <defName>CE_Gun_ChargeSniperRifle</defName>
     <label>R-11 precision rifle</label>
     <description>Charged-shot sniper rifle equipped with advanced optics for long-range shooting.</description>

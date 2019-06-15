@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- Patch CE Guns weapons with config settings for R&G -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="CombatExtended.PatchOperationFindMod">
+				<modName>RunAndGun</modName>
+			</li>
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="CE_Gun_SVD" or defName="CE_Gun_TacFifty" or defName="CE_Gun_PTRS" or defName="CE_Gun_RPGSeven" or defName="CE_Gun_M72LAW" or defName="CE_Gun_ChargeSniperRifle"]</xpath>
+				<value>
+					<li Class="RunAndGun.DefModExtension_SettingDefaults">
+						<weaponForbidden>true</weaponForbidden>
+					</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>
