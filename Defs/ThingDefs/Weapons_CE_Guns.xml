@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<ThingDefs>
-=======
 <Defs>
->>>>>>> master
   <ThingDef Name="BaseGun_CE" Abstract="True">
     <category>Item</category>
     <thingClass>ThingWithComps</thingClass>
@@ -37,6 +33,10 @@
   </ThingDef>
 
   <ThingDef Name="BaseMakeableGun_CE" ParentName="BaseGun_CE" Abstract="True">
+    <smeltable>true</smeltable>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
     <recipeMaker>
       <workSpeedStat>SmithingSpeed</workSpeedStat>
       <workSkill>Crafting</workSkill>
@@ -48,10 +48,6 @@
       <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
       <researchPrerequisite>Gunsmithing</researchPrerequisite>
     </recipeMaker>
-    <smeltable>true</smeltable>
-    <inspectorTabs>
-      <li>ITab_Art</li>
-    </inspectorTabs>
     <comps>
       <li>
         <compClass>CompQuality</compClass>
@@ -64,11 +60,7 @@
     </comps>
   </ThingDef>
 
-<<<<<<< HEAD
-  <ThingDef Name="BaseHumanMakeableGun_CE" ParentName="BaseMakeableGun_CE" Abstract="True">
-=======
   <ThingDef Name="BaseHumanMakeableGun_CE" ParentName="BaseMakeableGun" Abstract="True">
->>>>>>> master
     <weaponTags>
       <li>Gun</li>
     </weaponTags>
@@ -1047,7 +1039,7 @@
   
   <!-- ==================== PTRS ==================== -->
 
-  <ThingDef ParentName="BaseMakeableGun_CE">
+  <ThingDef ParentName="BaseMakeableGun">
     <defName>CE_Gun_PTRS</defName>
     <label>PTRS-41</label>
     <description>Ancient anti-tank rifle, originally designed for use against primitive armored vehicles. Fires a very powerful cartridge but the large size and weight make it unwieldy.</description>
@@ -1426,7 +1418,7 @@
 
   <!-- ==================== RPG-7 ==================== -->
   
-  <ThingDef ParentName="BaseMakeableGun_CE">
+  <ThingDef ParentName="BaseMakeableGun">
     <defName>CE_Gun_RPGSeven</defName>
     <label>RPG-7</label>
     <description>A short rocket-propelled grenade launcher that fires single projectiles which explode on impact. A relatively very cheap, multiple use alternative to single-shot launchers.</description>
@@ -1642,7 +1634,7 @@
 
   <!-- ==================== Milkor MGL ==================== -->
   
-  <ThingDef ParentName="BaseMakeableGun_CE">
+  <ThingDef ParentName="BaseMakeableGun">
     <defName>CE_Gun_MilkorMGL</defName>
     <label>Milkor MGL</label>
     <description>Ancient, man-portable grenade launcher. The 6-shot cylinder allows for a relatively high volume of fire.</description>
