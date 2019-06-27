@@ -3,6 +3,8 @@
 	<name>Combat Extended Guns</name>
 	<author>NoImageAvailable</author>
 	<url>https://ludeon.com/forums/index.php?topic=27374.0</url>
-    <targetVersion>1.0.2059</targetVersion>
-	<description>Version: Adds new guns to utilize CE mechanics.</description>
+	<supportedVersions>
+		<li>1.0</li>
+	</supportedVersions>
+	<description>Version: 1.0.1.5\n\nAdds new guns to utilize CE mechanics.</description>
 </ModMetaData>

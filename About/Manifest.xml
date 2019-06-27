@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest>
+    <identifier>CombatExtendedGuns</identifier>
+    <version>1.0.1.2</version>
+    <dependencies>
+        <li>CombatExtended</li>
+    </dependencies>
+    <loadAfter>
+        <li>CombatExtended</li>
+    </loadAfter>
+    <showCrossPromotions>true</showCrossPromotions>
+    <manifestUri>https://raw.githubusercontent.com/NoImageAvailable/CombatExtendedGuns/master/About/Manifest.xml</manifestUri>
+    <downloadUri>https://github.com/NoImageAvailable/CombatExtendedGuns/releases/latest</downloadUri>
+</Manifest>
