@@ -21,30 +21,22 @@
     <alwaysHaulable>True</alwaysHaulable>
     <tickerType>Never</tickerType>
     <techLevel>Industrial</techLevel>
-    <smeltable>true</smeltable>
     <thingCategories>
       <li>WeaponsRanged</li>
     </thingCategories>
-    <inspectorTabs>
-      <li>ITab_Art</li>
-    </inspectorTabs>
     <comps>
       <li Class="CompProperties_Forbiddable" />
       <li>
         <compClass>CompEquippable</compClass>
       </li>
-      <li>
-        <compClass>CompQuality</compClass>
-      </li>
-      <li Class="CompProperties_Art">
-        <nameMaker>ArtName_WeaponGun</nameMaker>
-        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
-        <minQualityForArtistic>Excellent</minQualityForArtistic>
-      </li>
     </comps>
   </ThingDef>
 
   <ThingDef Name="BaseMakeableGun_CE" ParentName="BaseGun_CE" Abstract="True">
+    <smeltable>true</smeltable>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
     <recipeMaker>
       <workSpeedStat>SmithingSpeed</workSpeedStat>
       <workSkill>Crafting</workSkill>
@@ -56,6 +48,16 @@
       <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
       <researchPrerequisite>Gunsmithing</researchPrerequisite>
     </recipeMaker>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>ArtName_WeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
   </ThingDef>
 
   <ThingDef Name="BaseHumanMakeableGun_CE" ParentName="BaseMakeableGun" Abstract="True">
@@ -1509,7 +1511,7 @@
 
   <!-- ==================== M72 LAW ==================== -->
   
-  <ThingDef ParentName="BaseGun">
+  <ThingDef ParentName="BaseGun_CE">
     <defName>CE_Gun_M72LAW</defName>
     <label>M72 LAW</label>
     <description>A lightweight single-use anti-tank launcher. Designed to provide soldiers in the field with a compact anti-armor weapon.</description>
