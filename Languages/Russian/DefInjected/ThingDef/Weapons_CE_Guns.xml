@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Taurus Judge -->
+
+  <CE_Gun_TaurusJudge.label>Taurus Judge</CE_Gun_TaurusJudge.label>
+  <CE_Gun_TaurusJudge.description>Древний револьвер, разработанный для самообороны. Стреляет мощным пистолетным патроном, а также патронами для дробовика малого калибра.</CE_Gun_TaurusJudge.description>
+  <CE_Gun_TaurusJudge.tools.0.label>рукоять</CE_Gun_TaurusJudge.tools.0.label>
+  <CE_Gun_TaurusJudge.tools.1.label>ствол</CE_Gun_TaurusJudge.tools.1.label>
+  <CE_Gun_TaurusJudge.tools.2.label>дуло</CE_Gun_TaurusJudge.tools.2.label>
+
+
+  <!-- P7 -->
+
+  <CE_Gun_PSeven.label>P7</CE_Gun_PSeven.label>
+  <CE_Gun_PSeven.description>Самозарядный пистолет, разработанный в древние времена. Раньше пользовался популярностью у полиции из-за своих малых габаритов.</CE_Gun_PSeven.description>
+  <CE_Gun_PSeven.tools.0.label>рукоять</CE_Gun_PSeven.tools.0.label>
+  <CE_Gun_PSeven.tools.1.label>ствол</CE_Gun_PSeven.tools.1.label>
+  <CE_Gun_PSeven.tools.2.label>дуло</CE_Gun_PSeven.tools.2.label>
+
+
+  <!-- USAS-12 -->
+
+  <CE_Gun_USASTwelve.label>USAS-12</CE_Gun_USASTwelve.label>
+  <CE_Gun_USASTwelve.description>Древний автоматический штурмовой дробовик, предназначенный для боя на близкой дистанции.</CE_Gun_USASTwelve.description>
+  <CE_Gun_USASTwelve.tools.0.label>приклад</CE_Gun_USASTwelve.tools.0.label>
+  <CE_Gun_USASTwelve.tools.1.label>ствол</CE_Gun_USASTwelve.tools.1.label>
+  <CE_Gun_USASTwelve.tools.2.label>дуло</CE_Gun_USASTwelve.tools.2.label>
+
+
+  <!-- KRISS Vector -->
+
+  <CE_Gun_KrissVector.label>KRISS Vector</CE_Gun_KrissVector.label>
+  <CE_Gun_KrissVector.description>Легкий пистолет-пулемёт необычной формы, разработанный для ближнего боя.</CE_Gun_KrissVector.description>
+  <CE_Gun_KrissVector.tools.0.label>приклад</CE_Gun_KrissVector.tools.0.label>
+  <CE_Gun_KrissVector.tools.1.label>ствол</CE_Gun_KrissVector.tools.1.label>
+  <CE_Gun_KrissVector.tools.2.label>дуло</CE_Gun_KrissVector.tools.2.label>
+
+
+  <!-- FN FAL -->
+
+  <CE_Gun_FNFAL.label>FN FAL</CE_Gun_FNFAL.label>
+  <CE_Gun_FNFAL.description>Древняя военная штурмовая винтовка, использующая мощный винтовочный патрон.</CE_Gun_FNFAL.description>
+  <CE_Gun_FNFAL.tools.0.label>приклад</CE_Gun_FNFAL.tools.0.label>
+  <CE_Gun_FNFAL.tools.1.label>ствол</CE_Gun_FNFAL.tools.1.label>
+  <CE_Gun_FNFAL.tools.2.label>дуло</CE_Gun_FNFAL.tools.2.label>
+
+
+  <!-- SKS -->
+
+  <CE_Gun_SKS.label>СКС</CE_Gun_SKS.label>
+  <CE_Gun_SKS.description>Древняя боевая винтовка. Стреляет патроном средней мощности, используется преимущественно для дальнего боя.</CE_Gun_SKS.description>
+  <CE_Gun_SKS.tools.0.label>приклад</CE_Gun_SKS.tools.0.label>
+  <CE_Gun_SKS.tools.1.label>ствол</CE_Gun_SKS.tools.1.label>
+  <CE_Gun_SKS.tools.2.label>дуло</CE_Gun_SKS.tools.2.label>
+
+
+  <!-- AK-47 -->
+
+  <CE_Gun_AKFortySeven.label>АК-47</CE_Gun_AKFortySeven.label>
+  <CE_Gun_AKFortySeven.description>Древний автомат, использующий промежуточный патрон. Простота конструкции делает это оружие очень надёжным и простым в сборке.</CE_Gun_AKFortySeven.description>
+  <CE_Gun_AKFortySeven.tools.0.label>приклад</CE_Gun_AKFortySeven.tools.0.label>
+  <CE_Gun_AKFortySeven.tools.1.label>ствол</CE_Gun_AKFortySeven.tools.1.label>
+  <CE_Gun_AKFortySeven.tools.2.label>дуло</CE_Gun_AKFortySeven.tools.2.label>
+
+
+  <!-- AK-12 -->
+
+  <CE_Gun_AKTwelve.label>АК-12</CE_Gun_AKTwelve.label>
+  <CE_Gun_AKTwelve.description>Древний штурмовой автомат, оснащенный магазином увеличенной ёмкости.</CE_Gun_AKTwelve.description>
+  <CE_Gun_AKTwelve.tools.0.label>приклад</CE_Gun_AKTwelve.tools.0.label>
+  <CE_Gun_AKTwelve.tools.1.label>ствол</CE_Gun_AKTwelve.tools.1.label>
+  <CE_Gun_AKTwelve.tools.2.label>дуло</CE_Gun_AKTwelve.tools.2.label>
+
+
+  <!-- AKS-74U -->
+
+  <CE_Gun_AKSSeventyFourU.label>АКС-74У</CE_Gun_AKSSeventyFourU.label>
+  <CE_Gun_AKSSeventyFourU.description>Древний укороченный автоматический карабин. Совмещает компактность пистолета-пулемёта и хорошую бронепробиваемость за счёт винтовочного патрона.</CE_Gun_AKSSeventyFourU.description>
+  <CE_Gun_AKSSeventyFourU.tools.0.label>приклад</CE_Gun_AKSSeventyFourU.tools.0.label>
+  <CE_Gun_AKSSeventyFourU.tools.1.label>ствол</CE_Gun_AKSSeventyFourU.tools.1.label>
+  <CE_Gun_AKSSeventyFourU.tools.2.label>дуло</CE_Gun_AKSSeventyFourU.tools.2.label>
+
+
+  <!-- SVD -->
+
+  <CE_Gun_SVD.label>СВД</CE_Gun_SVD.label>
+  <CE_Gun_SVD.description>Снайперская винтовка с довольно простым процессом сборки. Славится своей надёжностью.</CE_Gun_SVD.description>
+  <CE_Gun_SVD.tools.0.label>приклад</CE_Gun_SVD.tools.0.label>
+  <CE_Gun_SVD.tools.1.label>ствол</CE_Gun_SVD.tools.1.label>
+  <CE_Gun_SVD.tools.2.label>дуло</CE_Gun_SVD.tools.2.label>
+
+
+  <!-- Tac-50 -->
+
+  <CE_Gun_TacFifty.label>Tac-50</CE_Gun_TacFifty.label>
+  <CE_Gun_TacFifty.description>Древняя крупнокалиберная снайперская винтовка со скользящим затвором. Используется для стрельбы на огромные дистанции благодаря патрону большого калибра и мощному оптическому прицелу.</CE_Gun_TacFifty.description>
+  <CE_Gun_TacFifty.tools.0.label>приклад</CE_Gun_TacFifty.tools.0.label>
+  <CE_Gun_TacFifty.tools.1.label>ствол</CE_Gun_TacFifty.tools.1.label>
+  <CE_Gun_TacFifty.tools.2.label>дуло</CE_Gun_TacFifty.tools.2.label>
+
+
+  <!-- PTRS -->
+
+  <CE_Gun_PTRS.label>ПТРС-41</CE_Gun_PTRS.label>
+  <CE_Gun_PTRS.description>Древнее противотанковое ружьё, изначально разработанное для борьбы с примитивной бронетехникой. Стреляет очень мощным патроном, но большие габариты и вес оружия делают его неудобным в обращении.</CE_Gun_PTRS.description>
+  <CE_Gun_PTRS.tools.0.label>приклад</CE_Gun_PTRS.tools.0.label>
+  <CE_Gun_PTRS.tools.1.label>ствол</CE_Gun_PTRS.tools.1.label>
+  <CE_Gun_PTRS.tools.2.label>дуло</CE_Gun_PTRS.tools.2.label>
+
+
+  <!-- M60 machine gun -->
+
+  <CE_Gun_MSixty.label>M60</CE_Gun_MSixty.label>
+  <CE_Gun_MSixty.description>Пулемёт общего назначения с ленточной подачей патронов. Имеет высокую огневую мощь, но очень тяжёлый и громоздкий. Военные дали ему прозвище "Свинья".</CE_Gun_MSixty.description>
+  <CE_Gun_MSixty.tools.0.label>приклад</CE_Gun_MSixty.tools.0.label>
+  <CE_Gun_MSixty.tools.1.label>ствол</CE_Gun_MSixty.tools.1.label>
+  <CE_Gun_MSixty.tools.2.label>дуло</CE_Gun_MSixty.tools.2.label>
+
+
+  <!-- RPD -->
+
+  <CE_Gun_RPD.label>РПД</CE_Gun_RPD.label>
+  <CE_Gun_RPD.description>Древний ручной пулемёт. Предок современного автоматического оружия, относительно лёгкий для своего класса.</CE_Gun_RPD.description>
+  <CE_Gun_RPD.tools.0.label>приклад</CE_Gun_RPD.tools.0.label>
+  <CE_Gun_RPD.tools.1.label>ствол</CE_Gun_RPD.tools.1.label>
+  <CE_Gun_RPD.tools.2.label>дуло</CE_Gun_RPD.tools.2.label>
+
+
+  <!-- PKM -->
+
+  <CE_Gun_PKM.label>Пулемёт Калашникова</CE_Gun_PKM.label>
+  <CE_Gun_PKM.description>Древний ручной пулемёт общего назначения. Прочная конструкция и неприхотливость сделали его популярным оружием у людей, населяющих окраинные миры.</CE_Gun_PKM.description>
+  <CE_Gun_PKM.tools.0.label>приклад</CE_Gun_PKM.tools.0.label>
+  <CE_Gun_PKM.tools.1.label>ствол</CE_Gun_PKM.tools.1.label>
+  <CE_Gun_PKM.tools.2.label>дуло</CE_Gun_PKM.tools.2.label>
+
+
+  <!-- RPG-7 -->
+
+  <CE_Gun_RPGSeven.label>РПГ-7</CE_Gun_RPGSeven.label>
+  <CE_Gun_RPGSeven.description>Короткий реактивный гранатомет, запускающий одиночные снаряды, которые взрываются при ударе о цель. Относительно дешёвая альтернатива одноразовым пусковым установкам.</CE_Gun_RPGSeven.description>
+  <CE_Gun_RPGSeven.tools.0.label>приклад</CE_Gun_RPGSeven.tools.0.label>
+  <CE_Gun_RPGSeven.tools.1.label>ствол</CE_Gun_RPGSeven.tools.1.label>
+  <CE_Gun_RPGSeven.tools.2.label>дуло</CE_Gun_RPGSeven.tools.2.label>
+
+
+  <!-- M72 LAW -->
+
+  <CE_Gun_M72LAW.label>M72 LAW</CE_Gun_M72LAW.label>
+  <CE_Gun_M72LAW.description>Легковесный одноразовый противотанковый гранатомёт. Создан для обеспечения солдат на поле боя компактным оружием для борьбы с бронетехникой.</CE_Gun_M72LAW.description>
+  <CE_Gun_M72LAW.tools.0.label>приклад</CE_Gun_M72LAW.tools.0.label>
+  <CE_Gun_M72LAW.tools.1.label>ствол</CE_Gun_M72LAW.tools.1.label>
+  <CE_Gun_M72LAW.tools.2.label>дуло</CE_Gun_M72LAW.tools.2.label>
+
+
+  <!-- Milkor MGL -->
+
+  <CE_Gun_MilkorMGL.label>Milkor MGL</CE_Gun_MilkorMGL.label>
+  <CE_Gun_MilkorMGL.description>Древний ручной гранатомёт. Барабан на 6 выстрелов обеспечивает относительно высокую скорострельность.</CE_Gun_MilkorMGL.description>
+  <CE_Gun_MilkorMGL.tools.0.label>приклад</CE_Gun_MilkorMGL.tools.0.label>
+  <CE_Gun_MilkorMGL.tools.1.label>ствол</CE_Gun_MilkorMGL.tools.1.label>
+  <CE_Gun_MilkorMGL.tools.2.label>дуло</CE_Gun_MilkorMGL.tools.2.label>
+
+
+  <!-- Charge LMG -->
+
+  <CE_Gun_ChargeLMG.label>L-20 LMG</CE_Gun_ChargeLMG.label>
+  <CE_Gun_ChargeLMG.description>Лёгкий ручной пулемёт, использующий заряженные патроны. Разработан для ведения огня на подавление.</CE_Gun_ChargeLMG.description>
+  <CE_Gun_ChargeLMG.tools.0.label>приклад</CE_Gun_ChargeLMG.tools.0.label>
+  <CE_Gun_ChargeLMG.tools.1.label>ствол</CE_Gun_ChargeLMG.tools.1.label>
+  <CE_Gun_ChargeLMG.tools.2.label>дуло</CE_Gun_ChargeLMG.tools.2.label>
+
+
+  <!-- Charge Sniper -->
+
+  <CE_Gun_ChargeSniperRifle.label>Снайперская винтовка R-11</CE_Gun_ChargeSniperRifle.label>
+  <CE_Gun_ChargeSniperRifle.description>Снайперская винтовка, стреляющая заряженными патронами. Снабжена улучшенным оптическим прицелом для стрельбы на длинные дистанции.</CE_Gun_ChargeSniperRifle.description>
+  <CE_Gun_ChargeSniperRifle.tools.0.label>приклад</CE_Gun_ChargeSniperRifle.tools.0.label>
+  <CE_Gun_ChargeSniperRifle.tools.1.label>ствол</CE_Gun_ChargeSniperRifle.tools.1.label>
+  <CE_Gun_ChargeSniperRifle.tools.2.label>дуло</CE_Gun_ChargeSniperRifle.tools.2.label>
+
+
+  <!-- Flamethrower -->
+
+  <CE_Gun_Flamethrower.label>Огнемёт RM2</CE_Gun_Flamethrower.label>
+  <CE_Gun_Flamethrower.description>Огнемёт с нетрадиционным дизайном, использует сменные ёмкости со сжатой огнесмесью вместо бака на спине стрелка. Более удобен в обращении, но требует частой перезарядки.</CE_Gun_Flamethrower.description>
+  <CE_Gun_Flamethrower.tools.0.label>приклад</CE_Gun_Flamethrower.tools.0.label>
+  <CE_Gun_Flamethrower.tools.1.label>ствол</CE_Gun_Flamethrower.tools.1.label>
+  <CE_Gun_Flamethrower.tools.2.label>дуло</CE_Gun_Flamethrower.tools.2.label>
+
+
+</LanguageData>

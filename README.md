@@ -9,6 +9,7 @@ This mod adds several new firearms designed to take advantage of new CE mechanic
 - Taurus Judge
 ### SMG's
 - KRISS Vector
+- AKS-74U
 ### Shotguns
 - USAS-12
 ### Assault/battle rifles
@@ -30,3 +31,5 @@ This mod adds several new firearms designed to take advantage of new CE mechanic
 - Milkor MGL
 - RPG-7
 - M72 LAW
+### Other
+- Flamethrower
