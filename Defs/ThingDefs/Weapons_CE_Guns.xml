@@ -151,7 +151,7 @@
   
   <!-- ==================== P7 ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun_CE">
+  <!-- <ThingDef ParentName="BaseHumanMakeableGun_CE">
     <defName>CE_Gun_PSeven</defName>
     <label>P7</label>
     <description>Ancient pistol design. Used to be popular with police forces due to its compact size.</description>
@@ -233,7 +233,7 @@
         <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
       </li>
     </tools>
-  </ThingDef>
+  </ThingDef> -->
   
   <!-- ==================== USAS-12 ==================== -->
 
@@ -321,11 +321,17 @@
           <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
         </li>
       </tools>
+    <modExtensions>
+    	<li Class="CombatExtended.GunDrawExtension">
+    		<DrawSize>1.5,1.5</DrawSize>
+    		<DrawOffset>0,0</DrawOffset>
+    	</li>
+    </modExtensions>
   </ThingDef>
   
   <!-- ==================== KRISS Vector ==================== -->
 
-  <ThingDef ParentName="BaseHumanMakeableGun_CE">
+  <!-- <ThingDef ParentName="BaseHumanMakeableGun_CE">
     <defName>CE_Gun_KrissVector</defName>
     <label>KRISS Vector</label>
     <description>A uniquely shaped, lightweight SMG designed for close-quarters fighting.</description>
@@ -409,7 +415,7 @@
           <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
         </li>
       </tools>
-  </ThingDef>
+  </ThingDef> -->
   
   <!-- ==================== FN FAL ==================== -->
 
@@ -499,6 +505,12 @@
           <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
         </li>
       </tools>
+    <modExtensions>
+    	<li Class="CombatExtended.GunDrawExtension">
+    		<DrawSize>1.5,1.5</DrawSize>
+    		<DrawOffset>0,0</DrawOffset>
+    	</li>
+    </modExtensions>
   </ThingDef>
 
   <!-- ==================== SKS ==================== -->
@@ -678,6 +690,12 @@
           <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
         </li>
       </tools>
+    <modExtensions>
+    	<li Class="CombatExtended.GunDrawExtension">
+    		<DrawSize>1.5,1.5</DrawSize>
+    		<DrawOffset>0,0</DrawOffset>
+    	</li>
+    </modExtensions>
   </ThingDef>
   
   <!-- ==================== AK-12 ==================== -->
@@ -768,6 +786,12 @@
           <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
         </li>
       </tools>
+    <modExtensions>
+    	<li Class="CombatExtended.GunDrawExtension">
+    		<DrawSize>1.5,1.5</DrawSize>
+    		<DrawOffset>0,0</DrawOffset>
+    	</li>
+    </modExtensions>
   </ThingDef>
   
   <!-- ==================== AKS-74U ==================== -->
@@ -946,6 +970,12 @@
           <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
         </li>
       </tools>
+    <modExtensions>
+    	<li Class="CombatExtended.GunDrawExtension">
+    		<DrawSize>1.5,1.5</DrawSize>
+    		<DrawOffset>0,0</DrawOffset>
+    	</li>
+    </modExtensions>
   </ThingDef>
   
   <!-- ==================== Tac-50 ==================== -->
@@ -1035,6 +1065,12 @@
           <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
         </li>
       </tools>
+    <modExtensions>
+    	<li Class="CombatExtended.GunDrawExtension">
+    		<DrawSize>1.5,1.5</DrawSize>
+    		<DrawOffset>0,0</DrawOffset>
+    	</li>
+    </modExtensions>
   </ThingDef>
   
   <!-- ==================== PTRS ==================== -->
@@ -1125,8 +1161,8 @@
     </weaponTags>
     <modExtensions>
     	<li Class="CombatExtended.GunDrawExtension">
-    		<DrawSize>1,2</DrawSize>
-    		<DrawOffset>0,0</DrawOffset>
+    		<DrawSize>1.5,1.5</DrawSize>
+    		<DrawOffset>0.25,-0.075</DrawOffset>
     	</li>
     </modExtensions>
   </ThingDef>
@@ -1226,6 +1262,12 @@
           <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
         </li>
       </tools>
+    <modExtensions>
+    	<li Class="CombatExtended.GunDrawExtension">
+    		<DrawSize>1.5,1.5</DrawSize>
+    		<DrawOffset>0,0</DrawOffset>
+    	</li>
+    </modExtensions>
   </ThingDef>
   
   <!-- ==================== RPD ==================== -->
@@ -1323,6 +1365,12 @@
           <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
         </li>
       </tools>
+    <modExtensions>
+    	<li Class="CombatExtended.GunDrawExtension">
+    		<DrawSize>1.5,1.5</DrawSize>
+    		<DrawOffset>0,0</DrawOffset>
+    	</li>
+    </modExtensions>
   </ThingDef>
   
   <!-- ==================== PKM ==================== -->
@@ -1591,6 +1639,12 @@
           <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
         </li>
       </tools>
+    <modExtensions>
+    	<li Class="CombatExtended.GunDrawExtension">
+    		<DrawSize>1.5,1.5</DrawSize>
+    		<DrawOffset>0,0</DrawOffset>
+    	</li>
+    </modExtensions>
   </ThingDef>
 
   <RecipeDef ParentName="GrenadeRecipeBase">
@@ -1730,6 +1784,12 @@
           <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
         </li>
       </tools>
+    <modExtensions>
+    	<li Class="CombatExtended.GunDrawExtension">
+    		<DrawSize>1.5,1.5</DrawSize>
+    		<DrawOffset>0,0</DrawOffset>
+    	</li>
+    </modExtensions>
   </ThingDef>
 
   <!-- ==================== Charge LMG ==================== -->
@@ -1829,6 +1889,12 @@
           <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
         </li>
       </tools>
+    <modExtensions>
+    	<li Class="CombatExtended.GunDrawExtension">
+    		<DrawSize>1.5,1.5</DrawSize>
+    		<DrawOffset>0,0</DrawOffset>
+    	</li>
+    </modExtensions>
   </ThingDef>
 
   <!-- ==================== Charge Sniper ==================== -->
@@ -1919,6 +1985,12 @@
           <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
         </li>
       </tools>
+    <modExtensions>
+    	<li Class="CombatExtended.GunDrawExtension">
+    		<DrawSize>1.5,1.5</DrawSize>
+    		<DrawOffset>0,0</DrawOffset>
+    	</li>
+    </modExtensions>
   </ThingDef>
 
   <!-- ==================== Flamethrower ==================== -->
