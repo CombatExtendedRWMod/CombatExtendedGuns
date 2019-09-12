@@ -511,7 +511,7 @@
         <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
       </li>
     </tools>
-<modExtensions>
+    <modExtensions>
       <li Class="CombatExtended.GunDrawExtension">
         <DrawSize>1.25,1.25</DrawSize>
         <DrawOffset>0.12,-0.10</DrawOffset>
@@ -606,7 +606,7 @@
         <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
       </li>
     </tools>
-        <modExtensions>
+    <modExtensions>
       <li Class="CombatExtended.GunDrawExtension">
         <DrawSize>1.18,1.18</DrawSize>
         <DrawOffset>0.05,-0.05</DrawOffset>
@@ -1587,7 +1587,7 @@
     </tools>
     <modExtensions>
       <li Class="CombatExtended.GunDrawExtension">
-        <DrawSize>1.07,1.07</DrawSize>
+        <DrawSize>1.38,1.38</DrawSize>
         <DrawOffset>-0.2,0.0</DrawOffset>
       </li>
     </modExtensions>
