@@ -1885,6 +1885,9 @@
     </weaponTags>
     <recipeMaker>
       <researchPrerequisite>ChargedShot</researchPrerequisite>
+      <recipeUsers Inherit="false">
+        <li>FabricationBench</li>
+      </recipeUsers>
     </recipeMaker>
     <tools>
       <li Class="CombatExtended.ToolCE">
@@ -1981,6 +1984,9 @@
     </weaponTags>
     <recipeMaker>
       <researchPrerequisite>ChargedShot</researchPrerequisite>
+      <recipeUsers Inherit="false">
+        <li>FabricationBench</li>
+      </recipeUsers>
     </recipeMaker>
     <tools>
       <li Class="CombatExtended.ToolCE">
