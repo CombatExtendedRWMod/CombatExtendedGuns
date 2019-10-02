@@ -106,7 +106,7 @@
       <li Class="CombatExtended.CompProperties_AmmoUser">
         <magazineSize>5</magazineSize>
         <reloadTime>3.5</reloadTime>
-        <ammoSet>AmmoSet_45Colt</ammoSet>
+        <ammoSet>AmmoSet_45Colt410Bore</ammoSet>
       </li>
       <li Class="CombatExtended.CompProperties_FireModes" />
     </comps>
