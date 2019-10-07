@@ -1594,6 +1594,9 @@
         <warmupTime>1.9</warmupTime>
         <range>31</range>
         <minRange>5</minRange>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
         <soundCast>InfernoCannon_Fire</soundCast>
         <muzzleFlashScale>14</muzzleFlashScale>
       </li>
