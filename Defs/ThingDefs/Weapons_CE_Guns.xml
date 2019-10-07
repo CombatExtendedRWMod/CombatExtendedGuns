@@ -2002,7 +2002,7 @@
 
   <ThingDef ParentName="BaseHumanMakeableGun_CE">
     <defName>CE_Gun_ChargeSMG</defName>
-    <label>R-12 Charge SMG</label>
+    <label>S-14 Charge SMG</label>
     <description>Charged-shot sub-machine gun highly effective in close-quarters combat.</description>
     <graphicData>
       <texPath>Things/Weapons/ChargePDW</texPath>
