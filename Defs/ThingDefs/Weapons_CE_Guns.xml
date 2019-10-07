@@ -1795,7 +1795,7 @@
 
   <ThingDef ParentName="BaseHumanMakeableGun_CE">
     <defName>CE_Gun_ChargeLMG</defName>
-    <label>L-20 LMG</label>
+    <label>L-20 charge LMG</label>
     <description>Charged-shot light machine gun designed for suppression.</description>
     <graphicData>
       <texPath>Things/Weapons/ChargeLMG</texPath>
@@ -2002,7 +2002,7 @@
 
   <ThingDef ParentName="BaseHumanMakeableGun_CE">
     <defName>CE_Gun_ChargeSMG</defName>
-    <label>R-12 Charge SMG</label>
+    <label>S-14 charge SMG</label>
     <description>Charged-shot sub-machine gun highly effective in close-quarters combat.</description>
     <graphicData>
       <texPath>Things/Weapons/ChargePDW</texPath>
