@@ -526,7 +526,7 @@
       <ShotSpread>0.06</ShotSpread>
       <SwayFactor>1.41</SwayFactor>
       <Bulk>10.2</Bulk>
-      <Mass>4.10</Mass>
+      <Mass>3.85</Mass>
       <RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
@@ -909,7 +909,7 @@
       <SwayFactor>1.70</SwayFactor>
       <Bulk>12.25</Bulk>
       <Mass>4.30</Mass>
-      <RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
     </statBases>
     <costList>
       <Steel>60</Steel>
@@ -1016,7 +1016,7 @@
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_50BMG_FMJ</defaultProjectile>
-        <warmupTime>3.85</warmupTime>
+        <warmupTime>4.05</warmupTime>
         <range>86</range>
         <soundCast>Shot_SniperRifle</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -1305,11 +1305,11 @@
     </costList>
     <verbs>
       <li Class="CombatExtended.VerbPropertiesCE">
-        <recoilAmount>1.3</recoilAmount>
+        <recoilAmount>1.22</recoilAmount>
         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_762x39mmSoviet_FMJ</defaultProjectile>
-        <warmupTime>1.22</warmupTime>
+        <warmupTime>1.3</warmupTime>
         <range>48</range>
         <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
         <burstShotCount>10</burstShotCount>
@@ -1518,7 +1518,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_RPG7Grenade_HEAT</defaultProjectile>
         <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
-        <warmupTime>2.0</warmupTime>
+        <warmupTime>2.035</warmupTime>
         <range>40</range>        <!-- grenades at 12.9, rockets at 40 -->
         <minRange>5</minRange>
         <targetParams>
@@ -1575,7 +1575,7 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
       <MarketValue>51</MarketValue>
-      <SightsEfficiency>0.5</SightsEfficiency>
+      <SightsEfficiency>1.0</SightsEfficiency>
       <ShotSpread>0.2</ShotSpread>
       <SwayFactor>1.24</SwayFactor>
       <Bulk>7.3</Bulk>
@@ -1594,6 +1594,9 @@
         <warmupTime>1.9</warmupTime>
         <range>31</range>
         <minRange>5</minRange>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
         <soundCast>InfernoCannon_Fire</soundCast>
         <muzzleFlashScale>14</muzzleFlashScale>
       </li>
@@ -1795,7 +1798,7 @@
 
   <ThingDef ParentName="BaseHumanMakeableGun_CE">
     <defName>CE_Gun_ChargeLMG</defName>
-    <label>L-20 LMG</label>
+    <label>L-20 charge LMG</label>
     <description>Charged-shot light machine gun designed for suppression.</description>
     <graphicData>
       <texPath>Things/Weapons/ChargeLMG</texPath>
@@ -1805,8 +1808,8 @@
     <statBases>
       <WorkToMake>57000</WorkToMake>
       <SightsEfficiency>1.1</SightsEfficiency>
-      <ShotSpread>0.07</ShotSpread>
-      <SwayFactor>1.12</SwayFactor>
+      <ShotSpread>0.05</ShotSpread>
+      <SwayFactor>1.26</SwayFactor>
       <Bulk>14.0</Bulk>
       <Mass>7.0</Mass>
       <RangedWeapon_Cooldown>0.56</RangedWeapon_Cooldown>
@@ -2002,7 +2005,7 @@
 
   <ThingDef ParentName="BaseHumanMakeableGun_CE">
     <defName>CE_Gun_ChargeSMG</defName>
-    <label>R-12 Charge SMG</label>
+    <label>S-14 charge SMG</label>
     <description>Charged-shot sub-machine gun highly effective in close-quarters combat.</description>
     <graphicData>
       <texPath>Things/Weapons/ChargePDW</texPath>
