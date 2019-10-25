@@ -9,7 +9,7 @@
 				<modName>RunAndGun</modName>
 			</li>
 			<li Class="PatchOperationAddModExtension">
-				<xpath>Defs/ThingDef[defName="CE_Gun_SVD" or defName="CE_Gun_TacFifty" or defName="CE_Gun_PTRS" or defName="CE_Gun_RPGSeven" or defName="CE_Gun_M72LAW" or defName="CE_Gun_ChargeSniperRifle"]</xpath>
+				<xpath>Defs/ThingDef[defName="CE_Gun_SVD" or defName="CE_Gun_TacFifty" or defName="CE_Gun_PTRS" or defName="CE_Gun_RPGSeven" or defName="CE_Gun_M72LAW" or defName="CE_Gun_ChargeSniperRifle" or defName="CE_Gun_MSixty" or defName="CE_Gun_PKM" or defName="CE_Gun_RPD" or defName="CE_Gun_MilkorMGL" or defName="CE_Gun_ChargeLMG"]</xpath>
 				<value>
 					<li Class="RunAndGun.DefModExtension_SettingDefaults">
 						<weaponForbidden>true</weaponForbidden>
