@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- ========== Grenade launcher ========== -->
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="CE_GrenadeLauncher"]/label</xpath>
+    <value>
+      <label>M79</label>
+    </value>
+  </Operation>
+
+</Patch>
